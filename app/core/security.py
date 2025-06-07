@@ -335,6 +335,14 @@ async def get_current_admin_user(current_user: User = Depends(get_current_user))
         )
     return current_user
 
+# --- Alias for get_current_admin_user for backward compatibility ---
+async def get_current_active_superuser(current_user: User = Depends(get_current_user)) -> User:
+    """
+    Alias for get_current_admin_user for backward compatibility.
+    Checks if the current user is an admin.
+    """
+    return await get_current_admin_user(current_user)
+
 
 # NEW FUNCTION TO SUPPORT SERVICE ACCOUNT JWT
 def create_service_account_token(service_name: str, expires_minutes: int = 60):

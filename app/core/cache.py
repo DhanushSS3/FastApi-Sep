@@ -2,10 +2,13 @@
 
 import json
 import logging
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Union, Set, Tuple
 from redis.asyncio import Redis
 import decimal # Import Decimal for type hinting and serialization
+import time
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.database.models import User, DemoUser
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +30,26 @@ USER_DATA_CACHE_EXPIRY_SECONDS = 7 * 24 * 60 * 60 # Example: User session length
 USER_PORTFOLIO_CACHE_EXPIRY_SECONDS = 5 * 60 # Example: Short expiry, updated frequently
 GROUP_SYMBOL_SETTINGS_CACHE_EXPIRY_SECONDS = 30 * 24 * 60 * 60 # Example: Group settings change infrequently
 GROUP_SETTINGS_CACHE_EXPIRY_SECONDS = 30 * 24 * 60 * 60 # Example: Group settings change infrequently
+
+# Redis key prefixes for different cache types
+USER_DATA_PREFIX = "user_data_cache:"
+USER_PORTFOLIO_PREFIX = "user_portfolio_cache:"
+GROUP_SYMBOL_SETTINGS_PREFIX = "group_symbol_settings:"
+ADJUSTED_MARKET_PRICE_PREFIX = "adjusted_market_price:"
+LAST_KNOWN_PRICE_PREFIX = "last_known_price:"
+
+# Redis channel for account structure changes
+REDIS_ACCOUNT_CHANGE_CHANNEL = 'account_structure_change'
+
+# Cache expiration times (in seconds)
+USER_DATA_EXPIRY = 86400  # 24 hours
+USER_PORTFOLIO_EXPIRY = 3600  # 1 hour
+GROUP_SYMBOL_SETTINGS_EXPIRY = 86400  # 24 hours
+ADJUSTED_MARKET_PRICE_EXPIRY = 3600  # 1 hour
+LAST_KNOWN_PRICE_EXPIRY = 3600  # 1 hour
+
+# Maximum age for cache before requiring validation (in seconds)
+CACHE_MAX_AGE = 300  # 5 minutes
 
 # --- Last Known Price Cache ---
 class DecimalEncoder(json.JSONEncoder):
@@ -51,76 +74,127 @@ def decode_decimal(obj):
 
 
 # --- User Data Cache (Modified) ---
-async def set_user_data_cache(redis_client: Redis, user_id: int, data: Dict[str, Any]):
+async def set_user_data_cache(redis_client: Redis, user_id: int, user_data: Dict[str, Any]) -> bool:
     """
-    Stores relatively static user data (like group_name, leverage) in Redis.
+    Set user data in the cache with timestamp for validation.
+    
+    Args:
+        redis_client: Redis client
+        user_id: User ID
+        user_data: User data to cache
+        
+    Returns:
+        bool: True if successful, False otherwise
     """
-    if not redis_client:
-        cache_logger.warning(f"Redis client not available for setting user data cache for user {user_id}.")
-        return
-
-    key = f"{REDIS_USER_DATA_KEY_PREFIX}{user_id}"
     try:
-        # Ensure all Decimal values are handled by DecimalEncoder
-        data_serializable = json.dumps(data, cls=DecimalEncoder)
-        await redis_client.set(key, data_serializable, ex=USER_DATA_CACHE_EXPIRY_SECONDS)
-        cache_logger.debug(f"User data cached for user {user_id}")
+        # Add timestamp for cache validation
+        user_data['_cache_timestamp'] = time.time()
+        
+        # Serialize and store in Redis
+        key = f"{USER_DATA_PREFIX}{user_id}"
+        await redis_client.set(
+            key, 
+            json.dumps(user_data, cls=DecimalEncoder),
+            ex=USER_DATA_EXPIRY
+        )
+        return True
     except Exception as e:
         logger.error(f"Error setting user data cache for user {user_id}: {e}", exc_info=True)
-
+        return False
 
 async def get_user_data_cache(
-    redis_client: Redis,
-    user_id: int,
-    db: 'AsyncSession' = None,  # Optional for backward compatibility
-    user_type: str = None       # Optional for backward compatibility
+    redis_client: Redis, 
+    user_id: int, 
+    db_session: Optional[AsyncSession] = None,
+    user_type: Optional[str] = None
 ) -> Optional[Dict[str, Any]]:
     """
-    Retrieves user data from Redis cache. If not found, fetches from DB,
-    caches it, and then returns it. Expected data includes 'group_name', 'leverage', etc.
+    Get user data from cache with validation and database fallback.
+    
+    Args:
+        redis_client: Redis client
+        user_id: User ID
+        db_session: Database session for fallback
+        user_type: User type (live or demo) for fallback
+        
+    Returns:
+        Dict[str, Any]: User data or None if not found
     """
-    if not redis_client:
-        logger.warning(f"Redis client not available for getting user data cache for user {user_id}.")
-        return None
-
-    key = f"{REDIS_USER_DATA_KEY_PREFIX}{user_id}"
     try:
-        data_json = await redis_client.get(key)
-        if data_json:
-            data = json.loads(data_json, object_hook=decode_decimal)
-            cache_logger.debug(f"User data retrieved from cache for user {user_id}")
-            return data
-        # If not in cache, try fetching from DB if db and user_type are provided
-        if db is not None and user_type is not None:
+        key = f"{USER_DATA_PREFIX}{user_id}"
+        cached_data = await redis_client.get(key)
+        
+        if cached_data:
+            user_data = json.loads(cached_data, object_hook=decode_decimal)
+            
+            # Check if cache needs validation
+            timestamp = user_data.get('_cache_timestamp', 0)
+            current_time = time.time()
+            
+            if current_time - timestamp <= CACHE_MAX_AGE:
+                # Cache is fresh, return it
+                return user_data
+            
+            # Cache is stale but usable, refresh in background if db_session provided
+            if db_session and user_type:
+                # Import here to avoid circular imports
+                from app.crud import user as crud_user
+                
+                # Schedule background refresh without awaiting
+                if user_type.lower() == 'demo':
+                    db_user = await crud_user.get_demo_user_by_id(db_session, user_id, user_type=user_type)
+                else:
+                    db_user = await crud_user.get_user_by_id(db_session, user_id, user_type=user_type)
+                
+                if db_user:
+                    # Update cache with fresh data
+                    fresh_user_data = {
+                        "id": db_user.id,
+                        "email": db_user.email,
+                        "group_name": db_user.group_name,
+                        "leverage": db_user.leverage,
+                        "user_type": db_user.user_type,
+                        "account_number": getattr(db_user, 'account_number', None),
+                        "wallet_balance": db_user.wallet_balance,
+                        "margin": db_user.margin,
+                        "first_name": getattr(db_user, 'first_name', None),
+                        "last_name": getattr(db_user, 'last_name', None),
+                        "country": getattr(db_user, 'country', None),
+                        "phone_number": getattr(db_user, 'phone_number', None),
+                    }
+                    await set_user_data_cache(redis_client, user_id, fresh_user_data)
+                    return fresh_user_data
+            
+            # Return stale data if no refresh possible
+            return user_data
+            
+        elif db_session and user_type:
+            # Cache miss with DB fallback
             from app.crud import user as crud_user
-            cache_logger.info(f"User data for user {user_id} (type: {user_type}) not in cache. Fetching from DB.")
-            db_user_instance = None
-            actual_user_type = user_type.lower()
-            if actual_user_type == 'live':
-                db_user_instance = await crud_user.get_user_by_id(db, user_id, user_type=actual_user_type)
-            elif actual_user_type == 'demo':
-                db_user_instance = await crud_user.get_demo_user_by_id(db, user_id, user_type=actual_user_type)
-            if db_user_instance:
-                user_data_to_cache = {
-                    "id": db_user_instance.id,
-                    "email": db_user_instance.email,
-                    "group_name": db_user_instance.group_name,
-                    "leverage": db_user_instance.leverage,
-                    "user_type": db_user_instance.user_type,
-                    "account_number": getattr(db_user_instance, 'account_number', None),
-                    "wallet_balance": db_user_instance.wallet_balance,
-                    "margin": db_user_instance.margin,
-                    "first_name": getattr(db_user_instance, 'first_name', None),
-                    "last_name": getattr(db_user_instance, 'last_name', None),
-                    "country": getattr(db_user_instance, 'country', None),
-                    "phone_number": getattr(db_user_instance, 'phone_number', None),
-                }
-                await set_user_data_cache(redis_client, user_id, user_data_to_cache)
-                logger.info(f"User data for user {user_id} (type: {actual_user_type}) fetched from DB and cached.")
-                return user_data_to_cache
+            
+            if user_type.lower() == 'demo':
+                db_user = await crud_user.get_demo_user_by_id(db_session, user_id, user_type=user_type)
             else:
-                logger.warning(f"User {user_id} (type: {actual_user_type}) not found in DB. Cannot cache.")
-                return None
+                db_user = await crud_user.get_user_by_id(db_session, user_id, user_type=user_type)
+            
+            if db_user:
+                user_data = {
+                    "id": db_user.id,
+                    "email": db_user.email,
+                    "group_name": db_user.group_name,
+                    "leverage": db_user.leverage,
+                    "user_type": db_user.user_type,
+                    "account_number": getattr(db_user, 'account_number', None),
+                    "wallet_balance": db_user.wallet_balance,
+                    "margin": db_user.margin,
+                    "first_name": getattr(db_user, 'first_name', None),
+                    "last_name": getattr(db_user, 'last_name', None),
+                    "country": getattr(db_user, 'country', None),
+                    "phone_number": getattr(db_user, 'phone_number', None),
+                }
+                await set_user_data_cache(redis_client, user_id, user_data)
+                return user_data
+        
         return None
     except Exception as e:
         logger.error(f"Error getting user data cache for user {user_id}: {e}", exc_info=True)
@@ -179,100 +253,88 @@ async def get_user_positions_from_cache(redis_client: Redis, user_id: int) -> Li
 
 # --- New Group Symbol Settings Cache ---
 
-async def set_group_symbol_settings_cache(redis_client: Redis, group_name: str, symbol: str, settings: Dict[str, Any]):
+async def set_group_symbol_settings_cache(
+    redis_client: Redis, 
+    group_name: str, 
+    symbol: str, 
+    settings: Dict[str, Any]
+) -> bool:
     """
-    Stores group-specific settings for a given symbol in Redis.
-    Settings include spread, spread_pip, margin, etc.
+    Set group symbol settings in the cache.
+    
+    Args:
+        redis_client: Redis client
+        group_name: Group name
+        symbol: Symbol name
+        settings: Symbol settings
+        
+    Returns:
+        bool: True if successful, False otherwise
     """
-    if not redis_client:
-        logger.warning(f"Redis client not available for setting group-symbol settings cache for group '{group_name}', symbol '{symbol}'.")
-        return
-
-    # Use a composite key: prefix:group_name:symbol
-    key = f"{REDIS_GROUP_SYMBOL_SETTINGS_KEY_PREFIX}{group_name.lower()}:{symbol.upper()}" # Use lower/upper for consistency
     try:
-        settings_serializable = json.dumps(settings, cls=DecimalEncoder)
-        await redis_client.set(key, settings_serializable, ex=GROUP_SYMBOL_SETTINGS_CACHE_EXPIRY_SECONDS)
-        logger.debug(f"Group-symbol settings cached for group '{group_name}', symbol '{symbol}'.")
+        # Add timestamp for cache validation
+        settings['_cache_timestamp'] = time.time()
+        
+        # Serialize and store in Redis
+        key = f"{GROUP_SYMBOL_SETTINGS_PREFIX}{group_name}:{symbol}"
+        await redis_client.set(
+            key, 
+            json.dumps(settings, cls=DecimalEncoder),
+            ex=GROUP_SYMBOL_SETTINGS_EXPIRY
+        )
+        return True
     except Exception as e:
-        logger.error(f"Error setting group-symbol settings cache for group '{group_name}', symbol '{symbol}': {e}", exc_info=True)
+        logger.error(f"Error setting group symbol settings cache for {group_name}:{symbol}: {e}", exc_info=True)
+        return False
 
-async def get_group_symbol_settings_cache(redis_client: Redis, group_name: str, symbol: str) -> Optional[Dict[str, Any]]:
+async def get_group_symbol_settings_cache(
+    redis_client: Redis, 
+    group_name: str, 
+    symbol: str
+) -> Optional[Dict[str, Any]]:
     """
-    Retrieves group-specific settings for a given symbol from Redis cache.
-    If symbol is "ALL", retrieves settings for all symbols for the group.
-    Returns None if no settings found for the specified symbol or group.
+    Get group symbol settings from cache.
+    
+    Args:
+        redis_client: Redis client
+        group_name: Group name
+        symbol: Symbol name or "ALL" to get all symbols for the group
+        
+    Returns:
+        Dict[str, Any]: Symbol settings or None if not found
     """
-    if not redis_client:
-        logger.warning(f"Redis client not available for getting group-symbol settings cache for group '{group_name}', symbol '{symbol}'.")
-        return None
-
-    if symbol.upper() == "ALL":
-        # --- Handle retrieval of ALL settings for the group ---
-        all_settings: Dict[str, Dict[str, Any]] = {}
-        # Scan for all keys related to this group's symbol settings
-        # Use a cursor for efficient scanning of many keys
-        cursor = '0'
-        prefix = f"{REDIS_GROUP_SYMBOL_SETTINGS_KEY_PREFIX}{group_name.lower()}:"
-        try:
-            while cursor != 0:
-                # Use scan instead of keys for production environments
-                # The keys are already strings if decode_responses is True
-                cursor, keys = await redis_client.scan(cursor=cursor, match=f"{prefix}*", count=100) # Adjust count as needed
-
-                if keys:
-                    # Retrieve all found keys in a pipeline for efficiency
-                    pipe = redis_client.pipeline()
-                    for key in keys:
-                        pipe.get(key)
-                    results = await pipe.execute()
-
-                    # Process the results
-                    for key, settings_json in zip(keys, results):
-                        if settings_json:
-                            try:
-                                settings = json.loads(settings_json, object_hook=decode_decimal)
-                                # Extract symbol from the key (key format: prefix:group_name:symbol)
-                                # Key is already a string, no need to decode
-                                key_parts = key.split(':')
-                                if len(key_parts) == 3 and key_parts[0] == REDIS_GROUP_SYMBOL_SETTINGS_KEY_PREFIX.rstrip(':'):
-                                     symbol_from_key = key_parts[2]
-                                     all_settings[symbol_from_key] = settings
-                                else:
-                                     # Key is already a string, no need to decode for logging
-                                     logger.warning(f"Skipping incorrectly formatted Redis key: {key}")
-                            except json.JSONDecodeError:
-                                 # Key is already a string, no need to decode for logging
-                                 logger.error(f"Failed to decode JSON for settings key: {key}. Data: {settings_json}", exc_info=True)
-                            except Exception as e:
-                                # Key is already a string, no need to decode for logging
-                                logger.error(f"Unexpected error processing settings key {key}: {e}", exc_info=True)
-
-            if all_settings:
-                 cache_logger.debug(f"Aggregated {len(all_settings)} group-symbol settings for group '{group_name}'.")
-                 return all_settings
-            else:
-                 cache_logger.debug(f"No group-symbol settings found for group '{group_name}' using scan.")
-                 return None # Return None if no settings were found for the group
-
-        except Exception as e:
-             logger.error(f"Error scanning or retrieving group-symbol settings for group '{group_name}': {e}", exc_info=True)
-             return None # Return None on error
-
-    else:
-        # --- Handle retrieval of settings for a single symbol ---
-        key = f"{REDIS_GROUP_SYMBOL_SETTINGS_KEY_PREFIX}{group_name.lower()}:{symbol.upper()}" # Use lower/upper for consistency
-        try:
-            settings_json = await redis_client.get(key)
-            if settings_json:
-                settings = json.loads(settings_json, object_hook=decode_decimal)
-                cache_logger.debug(f"Group-symbol settings retrieved from cache for group '{group_name}', symbol '{symbol}'.")
-                return settings
-            cache_logger.debug(f"Group-symbol settings not found in cache for group '{group_name}', symbol '{symbol}'.")
-            return None # Return None if settings for the specific symbol are not found
-        except Exception as e:
-            cache_logger.error(f"Error getting group-symbol settings cache for group '{group_name}', symbol '{symbol}': {e}", exc_info=True)
+    try:
+        if symbol == "ALL":
+            # Get all symbols for this group
+            pattern = f"{GROUP_SYMBOL_SETTINGS_PREFIX}{group_name}:*"
+            keys = await redis_client.keys(pattern)
+            
+            if not keys:
+                return None
+                
+            result = {}
+            for key in keys:
+                key_str = key.decode('utf-8')
+                symbol_name = key_str.split(':')[-1]
+                
+                cached_data = await redis_client.get(key)
+                if cached_data:
+                    symbol_settings = json.loads(cached_data, object_hook=decode_decimal)
+                    result[symbol_name] = symbol_settings
+            
+            return result
+        else:
+            # Get specific symbol
+            key = f"{GROUP_SYMBOL_SETTINGS_PREFIX}{group_name}:{symbol}"
+            cached_data = await redis_client.get(key)
+            
+            if cached_data:
+                return json.loads(cached_data, object_hook=decode_decimal)
+            
             return None
+    except Exception as e:
+        logger.error(f"Error getting group symbol settings cache for {group_name}:{symbol}: {e}", exc_info=True)
+        return None
 
 # You might also want a function to cache ALL settings for a group,
 # or cache ALL group-symbol settings globally if the dataset is small enough.
@@ -293,68 +355,221 @@ async def set_adjusted_market_price_cache(
     buy_price: decimal.Decimal,
     sell_price: decimal.Decimal,
     spread_value: decimal.Decimal
-) -> None:
+) -> bool:
     """
-    Caches the adjusted market buy and sell prices (and spread value)
-    for a specific group and symbol in Redis.
-    Key structure: adjusted_market_price:{group_name}:{symbol}
-    Value is a JSON string: {"buy": "...", "sell": "...", "spread_value": "..."}
+    Set adjusted market price in the cache.
+    
+    Args:
+        redis_client: Redis client
+        group_name: Group name
+        symbol: Symbol name
+        buy_price: Buy price
+        sell_price: Sell price
+        spread_value: Spread value
+        
+    Returns:
+        bool: True if successful, False otherwise
     """
-    cache_key = f"{REDIS_ADJUSTED_MARKET_PRICE_KEY_PREFIX}{group_name}:{symbol}"
-    cache_logger.debug(f"Setting cache key: {cache_key}")
     try:
-        # Create a dictionary with Decimal values
-        adjusted_prices = {
-            "buy": str(buy_price),  # Convert to string for JSON serialization
-            "sell": str(sell_price),
-            "spread_value": str(spread_value)
+        # Create price data with timestamp
+        price_data = {
+            'buy': str(buy_price),
+            'sell': str(sell_price),
+            'spread': str(spread_value),
+            '_cache_timestamp': time.time()
         }
-        # Serialize the dictionary to a JSON string
+        
+        # Serialize and store in Redis
+        key = f"{ADJUSTED_MARKET_PRICE_PREFIX}{group_name}:{symbol}"
         await redis_client.set(
-            cache_key,
-            json.dumps(adjusted_prices),
-            ex=ADJUSTED_MARKET_PRICE_CACHE_EXPIRY_SECONDS
+            key, 
+            json.dumps(price_data),
+            ex=ADJUSTED_MARKET_PRICE_EXPIRY
         )
-        cache_logger.debug(f"Successfully cached adjusted market price for key {cache_key}: {adjusted_prices}")
+        return True
     except Exception as e:
-        cache_logger.error(f"Error setting adjusted market price in cache for key {cache_key}: {e}", exc_info=True)
+        logger.error(f"Error setting adjusted market price cache for {group_name}:{symbol}: {e}", exc_info=True)
+        return False
 
-async def get_adjusted_market_price_cache(redis_client: Redis, user_group_name: str, symbol: str) -> Optional[Dict[str, decimal.Decimal]]:
+async def get_adjusted_market_price_cache(
+    redis_client: Redis,
+    group_name: str,
+    symbol: str
+) -> Optional[Dict[str, Any]]:
     """
-    Retrieves the cached adjusted market prices for a specific group and symbol.
-    Returns None if the cache is empty or expired.
+    Get adjusted market price from cache.
+    
+    Args:
+        redis_client: Redis client
+        group_name: Group name
+        symbol: Symbol name
+        
+    Returns:
+        Dict[str, Any]: Price data or None if not found
     """
-    cache_key = f"{REDIS_ADJUSTED_MARKET_PRICE_KEY_PREFIX}{user_group_name}:{symbol}"
-    cache_logger.debug(f"Looking up cache key: {cache_key}")
     try:
-        cached_data = await redis_client.get(cache_key)
+        key = f"{ADJUSTED_MARKET_PRICE_PREFIX}{group_name}:{symbol}"
+        cached_data = await redis_client.get(key)
+        
         if cached_data:
-            price_data = json.loads(cached_data)
-            # Convert string values back to Decimal
-            return {
-                "buy": decimal.Decimal(price_data["buy"]),
-                "sell": decimal.Decimal(price_data["sell"]),
-                "spread_value": decimal.Decimal(price_data["spread_value"])
-            }
-        else:
-            cache_logger.debug(f"No cached data found for key {cache_key}")
-            return None
+            return json.loads(cached_data, object_hook=decode_decimal)
+        
+        return None
     except Exception as e:
-        cache_logger.error(f"Error fetching adjusted market price from cache for key {cache_key}: {e}", exc_info=True)
+        logger.error(f"Error getting adjusted market price cache for {group_name}:{symbol}: {e}", exc_info=True)
         return None
 
-async def publish_account_structure_changed_event(redis_client: Redis, user_id: int):
+async def publish_account_structure_changed_event(
+    redis_client: Redis,
+    user_id: int,
+    user_type: str = "live"
+) -> bool:
     """
-    Publishes an event to a Redis channel indicating that a user's account structure (e.g., portfolio, balance) has changed.
-    This can be used by WebSocket clients to trigger UI updates.
+    Publish an event to the account structure change channel.
+    
+    Args:
+        redis_client: Redis client
+        user_id: User ID
+        user_type: User type
+        
+    Returns:
+        bool: True if successful, False otherwise
     """
-    channel = f"user_updates:{user_id}"
-    message = json.dumps({"type": "ACCOUNT_STRUCTURE_CHANGED", "user_id": user_id})
     try:
-        await redis_client.publish(channel, message)
-        cache_logger.info(f"Published ACCOUNT_STRUCTURE_CHANGED event to {channel} for user_id {user_id}")
+        event_data = {
+            'user_id': user_id,
+            'user_type': user_type,
+            'timestamp': time.time()
+        }
+        
+        await redis_client.publish(
+            REDIS_ACCOUNT_CHANGE_CHANNEL,
+            json.dumps(event_data)
+        )
+        return True
     except Exception as e:
-        cache_logger.error(f"Error publishing ACCOUNT_STRUCTURE_CHANGED event for user {user_id}: {e}", exc_info=True)
+        logger.error(f"Error publishing account structure change event for user {user_id}: {e}", exc_info=True)
+        return False
+
+async def invalidate_user_cache(
+    redis_client: Redis,
+    user_id: int
+) -> bool:
+    """
+    Invalidate all cache for a user.
+    
+    Args:
+        redis_client: Redis client
+        user_id: User ID
+        
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        # Delete user data cache
+        user_data_key = f"{USER_DATA_PREFIX}{user_id}"
+        await redis_client.delete(user_data_key)
+        
+        # Delete portfolio cache
+        portfolio_key = f"{USER_PORTFOLIO_PREFIX}{user_id}"
+        await redis_client.delete(portfolio_key)
+        
+        return True
+    except Exception as e:
+        logger.error(f"Error invalidating cache for user {user_id}: {e}", exc_info=True)
+        return False
+
+async def get_all_cached_users(redis_client: Redis) -> List[int]:
+    """
+    Get all user IDs that have cached data.
+    
+    Args:
+        redis_client: Redis client
+        
+    Returns:
+        List[int]: List of user IDs
+    """
+    try:
+        # Get all user data keys
+        pattern = f"{USER_DATA_PREFIX}*"
+        keys = await redis_client.keys(pattern)
+        
+        user_ids = []
+        for key in keys:
+            key_str = key.decode('utf-8')
+            user_id_str = key_str.replace(USER_DATA_PREFIX, "")
+            try:
+                user_id = int(user_id_str)
+                user_ids.append(user_id)
+            except ValueError:
+                continue
+                
+        return user_ids
+    except Exception as e:
+        logger.error(f"Error getting all cached users: {e}", exc_info=True)
+        return []
+
+# --- Last Known Price Cache ---
+async def set_last_known_price(
+    redis_client: Redis,
+    symbol: str,
+    price_data: Dict[str, Any]
+) -> bool:
+    """
+    Set last known price in the cache.
+    
+    Args:
+        redis_client: Redis client
+        symbol: Symbol name
+        price_data: Price data from Firebase
+        
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        # Add timestamp for cache validation
+        price_data_with_timestamp = price_data.copy()
+        price_data_with_timestamp['_cache_timestamp'] = time.time()
+        
+        # Serialize and store in Redis
+        key = f"{LAST_KNOWN_PRICE_PREFIX}{symbol}"
+        await redis_client.set(
+            key, 
+            json.dumps(price_data_with_timestamp),
+            ex=LAST_KNOWN_PRICE_EXPIRY
+        )
+        return True
+    except Exception as e:
+        logger.error(f"Error setting last known price cache for {symbol}: {e}", exc_info=True)
+        return False
+
+async def get_last_known_price(
+    redis_client: Redis,
+    symbol: str
+) -> Optional[Dict[str, Any]]:
+    """
+    Get last known price from cache.
+    
+    Args:
+        redis_client: Redis client
+        symbol: Symbol name
+        
+    Returns:
+        Dict[str, Any]: Price data or None if not found
+    """
+    try:
+        key = f"{LAST_KNOWN_PRICE_PREFIX}{symbol}"
+        cached_data = await redis_client.get(key)
+        
+        if cached_data:
+            return json.loads(cached_data, object_hook=decode_decimal)
+        
+        return None
+    except Exception as e:
+        logger.error(f"Error getting last known price cache for {symbol}: {e}", exc_info=True)
+        return None
+
+# Add these functions after the get_adjusted_market_price_cache function
 
 async def get_live_adjusted_buy_price_for_pair(redis_client: Redis, symbol: str, user_group_name: str) -> Optional[decimal.Decimal]:
     """
@@ -381,17 +596,17 @@ async def get_live_adjusted_buy_price_for_pair(redis_client: Redis, symbol: str,
     except Exception as e:
         logger.error(f"Unexpected error accessing Redis for {cache_key}: {e}", exc_info=True)
 
-    # --- Fallback: Try raw Firebase price ---
+    # --- Fallback: Try last known price ---
     try:
-        fallback_data = get_latest_market_data(symbol)
-        # For BUY price, typically use the 'offer' or 'ask' price from market data ('o' in your Firebase structure)
-        if fallback_data and 'o' in fallback_data:
-            logger.warning(f"Fallback: Using raw Firebase 'o' price for {symbol}")
-            return decimal.Decimal(str(fallback_data['o']))
+        fallback_data = await get_last_known_price(redis_client, symbol)
+        # For BUY price, typically use the 'offer' or 'ask' price from market data ('b' in your Firebase structure)
+        if fallback_data and 'b' in fallback_data:
+            logger.warning(f"Fallback: Using raw last known 'b' price for {symbol}")
+            return decimal.Decimal(str(fallback_data['b']))
         else:
-            logger.warning(f"Fallback: No 'o' price found in Firebase for symbol {symbol}")
+            logger.warning(f"Fallback: No 'b' price found in last known price for symbol {symbol}")
     except Exception as fallback_error:
-        logger.error(f"Fallback error fetching from Firebase for {symbol}: {fallback_error}", exc_info=True)
+        logger.error(f"Fallback error fetching from last known price for {symbol}: {fallback_error}", exc_info=True)
 
     return None
 
@@ -420,17 +635,17 @@ async def get_live_adjusted_sell_price_for_pair(redis_client: Redis, symbol: str
     except Exception as e:
         logger.error(f"Unexpected error accessing Redis for {cache_key}: {e}", exc_info=True)
 
-    # --- Fallback: Try raw Firebase price ---
+    # --- Fallback: Try last known price ---
     try:
-        fallback_data = get_latest_market_data(symbol)
-        # For SELL price, typically use the 'bid' price from market data ('b' in your Firebase structure)
-        if fallback_data and 'b' in fallback_data:
-            logger.warning(f"Fallback: Using raw Firebase 'b' price for {symbol}")
-            return decimal.Decimal(str(fallback_data['b']))
+        fallback_data = await get_last_known_price(redis_client, symbol)
+        # For SELL price, typically use the 'bid' price from market data ('o' in your Firebase structure)
+        if fallback_data and 'o' in fallback_data:
+            logger.warning(f"Fallback: Using raw last known 'o' price for {symbol}")
+            return decimal.Decimal(str(fallback_data['o']))
         else:
-            logger.warning(f"Fallback: No 'b' price found in Firebase for symbol {symbol}")
+            logger.warning(f"Fallback: No 'o' price found in last known price for symbol {symbol}")
     except Exception as fallback_error:
-        logger.error(f"Fallback error fetching from Firebase for {symbol}: {fallback_error}", exc_info=True)
+        logger.error(f"Fallback error fetching from last known price for {symbol}: {fallback_error}", exc_info=True)
 
     return None
 
@@ -475,38 +690,4 @@ async def get_group_settings_cache(redis_client: Redis, group_name: str) -> Opti
         return None
     except Exception as e:
         cache_logger.error(f"Error getting group settings cache for group '{group_name}': {e}", exc_info=True)
-        return None
-
-# --- Last Known Price Cache ---
-async def set_last_known_price(redis_client: Redis, symbol: str, price_data: dict):
-    """
-    Store the last known price data for a symbol in Redis.
-    """
-    if not redis_client:
-        cache_logger.warning(f"Redis client not available for setting last known price for {symbol}.")
-        return
-    key = f"last_price:{symbol.upper()}"
-    try:
-        await redis_client.set(key, json.dumps(price_data, cls=DecimalEncoder))
-        cache_logger.debug(f"Last known price cached for symbol {symbol}")
-    except Exception as e:
-        cache_logger.error(f"Error setting last known price for symbol {symbol}: {e}", exc_info=True)
-
-async def get_last_known_price(redis_client: Redis, symbol: str) -> Optional[dict]:
-    """
-    Retrieve the last known price data for a symbol from Redis.
-    """
-    if not redis_client:
-        cache_logger.warning(f"Redis client not available for getting last known price for {symbol}.")
-        return None
-    key = f"last_price:{symbol.upper()}"
-    try:
-        data_json = await redis_client.get(key)
-        if data_json:
-            data = json.loads(data_json, object_hook=decode_decimal)
-            cache_logger.debug(f"Last known price retrieved from cache for symbol {symbol}")
-            return data
-        return None
-    except Exception as e:
-        cache_logger.error(f"Error getting last known price for symbol {symbol}: {e}", exc_info=True)
         return None

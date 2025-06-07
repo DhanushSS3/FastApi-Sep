@@ -18358,3 +18358,2083 @@ TypeError: object dict can't be used in 'await' expression
 2025-06-06 09:54:33,266 - INFO - app.main - Background task 'firebase_listener' cancelled successfully.
 2025-06-06 09:54:33,272 - INFO - app.main - Redis client connection closed.
 2025-06-06 09:54:33,272 - INFO - app.main - Application shutdown event finished.
+2025-06-06 09:57:29,402 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 09:57:29,431 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 09:57:29,444 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 09:57:29,445 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 09:57:30,206 - INFO - app.main - Application startup event triggered.
+2025-06-06 09:57:30,297 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 09:57:30,297 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 09:57:30,329 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 09:57:30,373 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 09:57:30,502 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 09:57:30,505 - INFO - app.main - Database tables ensured/created.
+2025-06-06 09:57:30,513 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 09:57:31,645 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 09:57:31,646 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzMDg1MCwiaWF0IjoxNzQ5MjI5MDUwfQ.NvPbvT5IejO1CK-8jbzXoBJJsZXOZNZw8Y63cs1S9SU
+2025-06-06 09:57:31,646 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 09:57:31,646 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 09:57:31,647 - INFO - app.main - Application startup event finished.
+2025-06-06 09:57:31,649 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 09:57:31,650 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 09:57:32,486 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 09:57:32,492 - INFO - app.main - Redis ping response: True
+2025-06-06 09:57:34,057 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCAD'.
+2025-06-06 09:57:34,072 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCHF'.
+2025-06-06 09:57:34,086 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDJPY'.
+2025-06-06 09:57:34,097 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDNZD'.
+2025-06-06 09:57:34,117 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDSGD'.
+2025-06-06 09:57:34,132 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDUSD'.
+2025-06-06 09:57:34,149 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADCHF'.
+2025-06-06 09:57:34,177 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADJPY'.
+2025-06-06 09:57:34,205 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFJPY'.
+2025-06-06 09:57:34,221 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFSGD'.
+2025-06-06 09:57:34,238 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURAUD'.
+2025-06-06 09:57:34,252 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCAD'.
+2025-06-06 09:57:34,267 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCHF'.
+2025-06-06 09:57:34,281 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCZK'.
+2025-06-06 09:57:34,301 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURGBP'.
+2025-06-06 09:57:34,317 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURJPY'.
+2025-06-06 09:57:34,335 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNOK'.
+2025-06-06 09:57:34,351 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNZD'.
+2025-06-06 09:57:34,369 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURPLN'.
+2025-06-06 09:57:34,384 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSEK'.
+2025-06-06 09:57:34,398 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSGD'.
+2025-06-06 09:57:34,415 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURTRY'.
+2025-06-06 09:57:34,431 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURUSD'.
+2025-06-06 09:57:34,447 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURZAR'.
+2025-06-06 09:57:34,460 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPAUD'.
+2025-06-06 09:57:34,477 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCAD'.
+2025-06-06 09:57:34,491 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCHF'.
+2025-06-06 09:57:34,507 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPJPY'.
+2025-06-06 09:57:34,524 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNOK'.
+2025-06-06 09:57:34,541 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNZD'.
+2025-06-06 09:57:34,557 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSEK'.
+2025-06-06 09:57:34,575 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSGD'.
+2025-06-06 09:57:34,594 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPTRY'.
+2025-06-06 09:57:34,611 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPUSD'.
+2025-06-06 09:57:34,627 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKJPY'.
+2025-06-06 09:57:34,642 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKSEK'.
+2025-06-06 09:57:34,660 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCAD'.
+2025-06-06 09:57:34,676 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCHF'.
+2025-06-06 09:57:34,692 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDJPY'.
+2025-06-06 09:57:34,725 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDUSD'.
+2025-06-06 09:57:34,742 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SEKJPY'.
+2025-06-06 09:57:34,759 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SGDJPY'.
+2025-06-06 09:57:34,775 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCAD'.
+2025-06-06 09:57:34,792 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCHF'.
+2025-06-06 09:57:34,807 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCNH'.
+2025-06-06 09:57:34,822 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCZK'.
+2025-06-06 09:57:34,839 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDJPY'.
+2025-06-06 09:57:34,856 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDMXN'.
+2025-06-06 09:57:34,873 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDNOK'.
+2025-06-06 09:57:34,889 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDPLN'.
+2025-06-06 09:57:34,905 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSEK'.
+2025-06-06 09:57:34,921 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSGD'.
+2025-06-06 09:57:34,938 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTHB'.
+2025-06-06 09:57:34,952 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTRY'.
+2025-06-06 09:57:34,969 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDZAR'.
+2025-06-06 09:57:34,986 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'ZARJPY'.
+2025-06-06 09:57:35,002 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAUUSD'.
+2025-06-06 09:57:35,017 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAGUSD'.
+2025-06-06 09:57:35,032 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'BTCUSD'.
+2025-06-06 09:57:35,048 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UK100'.
+2025-06-06 09:57:35,064 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'DE30'.
+2025-06-06 09:57:35,078 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUS200'.
+2025-06-06 09:57:35,093 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'FR40'.
+2025-06-06 09:57:35,109 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US100'.
+2025-06-06 09:57:35,126 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US500'.
+2025-06-06 09:57:35,165 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000'.
+2025-06-06 09:57:35,216 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US30'.
+2025-06-06 09:57:35,246 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'JP225'.
+2025-06-06 09:57:35,261 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'IND50'.
+2025-06-06 09:57:35,271 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CN50U'.
+2025-06-06 09:57:35,296 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'HKG50'.
+2025-06-06 09:57:35,312 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USOIL'.
+2025-06-06 09:57:35,329 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UKOIL'.
+2025-06-06 09:57:35,344 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NGAS'.
+2025-06-06 09:57:35,363 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTUSD'.
+2025-06-06 09:57:35,377 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000-1'.
+2025-06-06 09:57:35,393 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GER30-1'.
+2025-06-06 09:57:35,410 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'W20'.
+2025-06-06 09:57:35,426 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'D30'.
+2025-06-06 09:57:36,065 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:39,004 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:40,744 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:43,322 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:45,547 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:47,775 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:49,974 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:52,486 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:54,714 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:57,055 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:57:59,184 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:01,600 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:03,523 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:05,727 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:07,941 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:10,444 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:12,606 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:15,107 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:17,266 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:19,554 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:21,817 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:24,176 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:26,498 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:28,829 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:31,018 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:33,542 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:35,706 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:38,058 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 09:58:38,772 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 09:58:38,773 - INFO - app.main - APScheduler shut down gracefully.
+2025-06-06 09:58:38,773 - INFO - app.main - Cancelling 2 other background tasks...
+2025-06-06 09:58:38,776 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 09:58:40,163 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 09:58:40,163 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 09:58:40,163 - INFO - app.main - Background task 'firebase_listener' cancelled successfully.
+2025-06-06 09:58:40,164 - INFO - app.main - Redis client connection closed.
+2025-06-06 09:58:40,164 - INFO - app.main - Application shutdown event finished.
+2025-06-06 10:58:20,118 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 10:58:20,147 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 10:58:20,153 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 10:58:20,153 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 10:58:20,754 - INFO - app.main - Application startup event triggered.
+2025-06-06 10:58:20,787 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 10:58:20,787 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 10:58:20,836 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 10:58:20,952 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 10:58:21,070 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 10:58:21,075 - INFO - app.main - Database tables ensured/created.
+2025-06-06 10:58:21,080 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 10:58:22,895 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 10:58:22,895 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNDUwMSwiaWF0IjoxNzQ5MjMyNzAxfQ.pkCnhRmp8ygzwNHwBwftwppjvwbU4Q55wPdXU_WAQ1M
+2025-06-06 10:58:22,896 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 10:58:22,896 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 10:58:22,896 - INFO - app.main - Application startup event finished.
+2025-06-06 10:58:22,896 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 10:58:22,897 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 10:58:23,526 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 10:58:23,541 - INFO - app.main - Redis ping response: True
+2025-06-06 10:58:44,150 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCAD'.
+2025-06-06 10:58:44,169 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCHF'.
+2025-06-06 10:58:44,183 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDJPY'.
+2025-06-06 10:58:44,222 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDNZD'.
+2025-06-06 10:58:44,264 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDSGD'.
+2025-06-06 10:58:44,404 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDUSD'.
+2025-06-06 10:58:44,467 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADCHF'.
+2025-06-06 10:58:44,537 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADJPY'.
+2025-06-06 10:58:44,546 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFJPY'.
+2025-06-06 10:58:44,626 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFSGD'.
+2025-06-06 10:58:44,653 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURAUD'.
+2025-06-06 10:58:44,676 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCAD'.
+2025-06-06 10:58:44,723 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCHF'.
+2025-06-06 10:58:44,746 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCZK'.
+2025-06-06 10:58:44,810 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURGBP'.
+2025-06-06 10:58:44,836 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURJPY'.
+2025-06-06 10:58:44,857 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNOK'.
+2025-06-06 10:58:44,901 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNZD'.
+2025-06-06 10:58:44,942 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURPLN'.
+2025-06-06 10:58:44,977 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSEK'.
+2025-06-06 10:58:45,026 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSGD'.
+2025-06-06 10:58:45,050 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURTRY'.
+2025-06-06 10:58:45,104 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURUSD'.
+2025-06-06 10:58:45,132 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURZAR'.
+2025-06-06 10:58:45,171 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPAUD'.
+2025-06-06 10:58:45,219 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCAD'.
+2025-06-06 10:58:45,274 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCHF'.
+2025-06-06 10:58:45,332 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPJPY'.
+2025-06-06 10:58:45,375 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNOK'.
+2025-06-06 10:58:45,409 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNZD'.
+2025-06-06 10:58:45,427 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSEK'.
+2025-06-06 10:58:45,477 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSGD'.
+2025-06-06 10:58:45,519 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPTRY'.
+2025-06-06 10:58:45,546 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPUSD'.
+2025-06-06 10:58:45,585 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKJPY'.
+2025-06-06 10:58:45,632 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKSEK'.
+2025-06-06 10:58:45,683 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCAD'.
+2025-06-06 10:58:45,726 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCHF'.
+2025-06-06 10:58:45,774 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDJPY'.
+2025-06-06 10:58:45,820 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDUSD'.
+2025-06-06 10:58:45,854 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SEKJPY'.
+2025-06-06 10:58:45,918 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SGDJPY'.
+2025-06-06 10:58:45,944 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCAD'.
+2025-06-06 10:58:45,984 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCHF'.
+2025-06-06 10:58:46,010 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCNH'.
+2025-06-06 10:58:46,035 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCZK'.
+2025-06-06 10:58:46,084 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDJPY'.
+2025-06-06 10:58:46,121 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDMXN'.
+2025-06-06 10:58:46,158 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDNOK'.
+2025-06-06 10:58:46,225 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDPLN'.
+2025-06-06 10:58:46,244 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSEK'.
+2025-06-06 10:58:46,261 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSGD'.
+2025-06-06 10:58:46,291 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTHB'.
+2025-06-06 10:58:46,350 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTRY'.
+2025-06-06 10:58:46,369 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDZAR'.
+2025-06-06 10:58:46,382 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'ZARJPY'.
+2025-06-06 10:58:46,463 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAUUSD'.
+2025-06-06 10:58:46,519 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAGUSD'.
+2025-06-06 10:58:46,551 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'BTCUSD'.
+2025-06-06 10:58:46,643 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UK100'.
+2025-06-06 10:58:46,668 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'DE30'.
+2025-06-06 10:58:46,677 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUS200'.
+2025-06-06 10:58:46,694 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'FR40'.
+2025-06-06 10:58:46,740 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US100'.
+2025-06-06 10:58:46,757 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US500'.
+2025-06-06 10:58:46,781 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000'.
+2025-06-06 10:58:46,803 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US30'.
+2025-06-06 10:58:46,821 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'JP225'.
+2025-06-06 10:58:46,848 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'IND50'.
+2025-06-06 10:58:46,876 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CN50U'.
+2025-06-06 10:58:46,906 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'HKG50'.
+2025-06-06 10:58:46,926 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USOIL'.
+2025-06-06 10:58:46,964 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UKOIL'.
+2025-06-06 10:58:46,988 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NGAS'.
+2025-06-06 10:58:47,013 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTUSD'.
+2025-06-06 10:58:47,040 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000-1'.
+2025-06-06 10:58:47,066 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GER30-1'.
+2025-06-06 10:58:47,090 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'W20'.
+2025-06-06 10:58:47,113 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'D30'.
+2025-06-06 10:58:48,964 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:58:51,249 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:58:53,498 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:58:55,889 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:58:58,421 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:00,362 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:02,857 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:05,196 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:07,372 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:09,821 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:11,980 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:14,338 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:16,730 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:18,934 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:21,137 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:23,460 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:25,801 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:28,010 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:30,368 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:32,616 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:34,948 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:37,205 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:39,669 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:42,131 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:44,163 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:46,706 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:48,772 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:51,189 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:53,430 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:55,717 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 10:59:58,323 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:00,592 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:00:00,592 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNDYwMCwiaWF0IjoxNzQ5MjMyODAwfQ.G-xDjBRJPnneBuwNl6aHhPUdbjvg8i0aAXqL4wc5eAU
+2025-06-06 11:00:01,339 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:03,033 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:05,061 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:07,879 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:10,087 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:12,373 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:14,305 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:16,435 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:19,129 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:21,106 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:23,350 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:25,654 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:28,072 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:30,235 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:32,605 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:34,926 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:37,322 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:39,602 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:41,771 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:44,127 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:46,652 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:48,740 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:50,986 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:53,394 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:55,773 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:00:58,056 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:00,417 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:02,631 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:05,019 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:07,302 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:09,680 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:11,925 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:14,200 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:16,502 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:18,897 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:21,114 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:23,328 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:25,647 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:28,051 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:30,347 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:32,649 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:34,802 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:37,134 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:39,580 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:41,804 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:44,186 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:46,377 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:48,667 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:51,167 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:53,280 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:55,645 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:01:57,929 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:00,552 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:02,436 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:04,846 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:07,266 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:09,631 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:11,931 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:14,223 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:16,486 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:18,849 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:21,175 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:23,303 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:25,689 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:28,092 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:30,251 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:32,610 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:02:56,664 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCAD'.
+2025-06-06 11:02:56,683 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCHF'.
+2025-06-06 11:02:56,702 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDJPY'.
+2025-06-06 11:02:56,720 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDNZD'.
+2025-06-06 11:02:56,740 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDSGD'.
+2025-06-06 11:02:56,762 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDUSD'.
+2025-06-06 11:02:56,780 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADCHF'.
+2025-06-06 11:02:56,800 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADJPY'.
+2025-06-06 11:02:56,818 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFJPY'.
+2025-06-06 11:02:56,836 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFSGD'.
+2025-06-06 11:02:56,853 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURAUD'.
+2025-06-06 11:02:56,872 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCAD'.
+2025-06-06 11:02:56,884 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCHF'.
+2025-06-06 11:02:56,903 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCZK'.
+2025-06-06 11:02:56,923 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURGBP'.
+2025-06-06 11:02:56,936 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURJPY'.
+2025-06-06 11:02:56,961 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNOK'.
+2025-06-06 11:02:56,980 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNZD'.
+2025-06-06 11:02:56,999 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURPLN'.
+2025-06-06 11:02:57,018 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSEK'.
+2025-06-06 11:02:57,037 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSGD'.
+2025-06-06 11:02:57,057 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURTRY'.
+2025-06-06 11:02:57,078 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURUSD'.
+2025-06-06 11:02:57,098 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURZAR'.
+2025-06-06 11:02:57,114 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPAUD'.
+2025-06-06 11:02:57,131 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCAD'.
+2025-06-06 11:02:57,144 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCHF'.
+2025-06-06 11:02:57,157 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPJPY'.
+2025-06-06 11:02:57,171 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNOK'.
+2025-06-06 11:02:57,184 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNZD'.
+2025-06-06 11:02:57,199 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSEK'.
+2025-06-06 11:02:57,213 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSGD'.
+2025-06-06 11:02:57,226 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPTRY'.
+2025-06-06 11:02:57,241 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPUSD'.
+2025-06-06 11:02:57,262 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKJPY'.
+2025-06-06 11:02:57,276 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKSEK'.
+2025-06-06 11:02:57,290 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCAD'.
+2025-06-06 11:02:57,304 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCHF'.
+2025-06-06 11:02:57,318 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDJPY'.
+2025-06-06 11:02:57,331 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDUSD'.
+2025-06-06 11:02:57,345 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SEKJPY'.
+2025-06-06 11:02:57,361 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SGDJPY'.
+2025-06-06 11:02:57,375 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCAD'.
+2025-06-06 11:02:57,387 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCHF'.
+2025-06-06 11:02:57,403 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCNH'.
+2025-06-06 11:02:57,416 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCZK'.
+2025-06-06 11:02:57,435 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDJPY'.
+2025-06-06 11:02:57,449 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDMXN'.
+2025-06-06 11:02:57,464 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDNOK'.
+2025-06-06 11:02:57,476 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDPLN'.
+2025-06-06 11:02:57,491 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSEK'.
+2025-06-06 11:02:57,504 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSGD'.
+2025-06-06 11:02:57,518 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTHB'.
+2025-06-06 11:02:57,547 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTRY'.
+2025-06-06 11:02:57,591 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDZAR'.
+2025-06-06 11:02:57,605 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'ZARJPY'.
+2025-06-06 11:02:57,632 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAUUSD'.
+2025-06-06 11:02:57,677 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAGUSD'.
+2025-06-06 11:02:57,771 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'BTCUSD'.
+2025-06-06 11:02:57,835 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UK100'.
+2025-06-06 11:02:57,851 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'DE30'.
+2025-06-06 11:02:57,861 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUS200'.
+2025-06-06 11:02:57,869 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'FR40'.
+2025-06-06 11:02:57,906 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US100'.
+2025-06-06 11:02:57,936 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US500'.
+2025-06-06 11:02:57,949 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000'.
+2025-06-06 11:02:57,964 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US30'.
+2025-06-06 11:02:57,983 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'JP225'.
+2025-06-06 11:02:57,999 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'IND50'.
+2025-06-06 11:02:58,016 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CN50U'.
+2025-06-06 11:02:58,031 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'HKG50'.
+2025-06-06 11:02:58,049 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USOIL'.
+2025-06-06 11:02:58,082 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UKOIL'.
+2025-06-06 11:02:58,121 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NGAS'.
+2025-06-06 11:02:58,140 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTUSD'.
+2025-06-06 11:02:58,159 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000-1'.
+2025-06-06 11:02:58,178 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GER30-1'.
+2025-06-06 11:02:58,189 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'W20'.
+2025-06-06 11:02:58,201 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'D30'.
+2025-06-06 11:04:20,517 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:04:20,519 - INFO - app.main - APScheduler shut down gracefully.
+2025-06-06 11:04:20,519 - INFO - app.main - Cancelling 2 other background tasks...
+2025-06-06 11:04:20,521 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:04:20,819 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:04:20,820 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:04:20,820 - INFO - app.main - Background task 'firebase_listener' cancelled successfully.
+2025-06-06 11:04:20,824 - INFO - app.main - Redis client connection closed.
+2025-06-06 11:04:20,825 - INFO - app.main - Application shutdown event finished.
+2025-06-06 11:09:57,078 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:09:57,107 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:09:57,113 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:09:57,113 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:09:57,709 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:09:57,743 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:09:57,743 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:09:57,784 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:09:57,825 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:09:57,937 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:09:57,941 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:09:57,948 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:09:59,408 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:09:59,408 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNTE5NywiaWF0IjoxNzQ5MjMzMzk3fQ.wAoDm3nKD3m_VMV6m9ksLBog4XbhTonvvRTMpIHEfO0
+2025-06-06 11:09:59,408 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:09:59,408 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:09:59,408 - INFO - app.main - Application startup event finished.
+2025-06-06 11:09:59,408 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:09:59,409 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:09:59,990 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:10:00,019 - INFO - app.main - Redis ping response: True
+2025-06-06 11:10:05,687 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCAD'.
+2025-06-06 11:10:05,698 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDCHF'.
+2025-06-06 11:10:05,712 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDJPY'.
+2025-06-06 11:10:05,724 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDNZD'.
+2025-06-06 11:10:05,737 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDSGD'.
+2025-06-06 11:10:05,751 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUDUSD'.
+2025-06-06 11:10:05,765 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADCHF'.
+2025-06-06 11:10:05,778 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CADJPY'.
+2025-06-06 11:10:05,791 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFJPY'.
+2025-06-06 11:10:05,802 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CHFSGD'.
+2025-06-06 11:10:05,817 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURAUD'.
+2025-06-06 11:10:05,830 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCAD'.
+2025-06-06 11:10:05,843 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCHF'.
+2025-06-06 11:10:05,856 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURCZK'.
+2025-06-06 11:10:05,869 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURGBP'.
+2025-06-06 11:10:05,882 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURJPY'.
+2025-06-06 11:10:05,895 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNOK'.
+2025-06-06 11:10:05,907 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURNZD'.
+2025-06-06 11:10:05,919 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURPLN'.
+2025-06-06 11:10:05,932 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSEK'.
+2025-06-06 11:10:05,945 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURSGD'.
+2025-06-06 11:10:05,957 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURTRY'.
+2025-06-06 11:10:05,969 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURUSD'.
+2025-06-06 11:10:05,983 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'EURZAR'.
+2025-06-06 11:10:05,999 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPAUD'.
+2025-06-06 11:10:06,014 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCAD'.
+2025-06-06 11:10:06,029 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPCHF'.
+2025-06-06 11:10:06,042 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPJPY'.
+2025-06-06 11:10:06,057 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNOK'.
+2025-06-06 11:10:06,070 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPNZD'.
+2025-06-06 11:10:06,083 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSEK'.
+2025-06-06 11:10:06,093 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPSGD'.
+2025-06-06 11:10:06,120 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPTRY'.
+2025-06-06 11:10:06,151 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GBPUSD'.
+2025-06-06 11:10:06,169 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKJPY'.
+2025-06-06 11:10:06,203 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NOKSEK'.
+2025-06-06 11:10:06,257 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCAD'.
+2025-06-06 11:10:06,304 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDCHF'.
+2025-06-06 11:10:06,334 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDJPY'.
+2025-06-06 11:10:06,370 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NZDUSD'.
+2025-06-06 11:10:06,410 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SEKJPY'.
+2025-06-06 11:10:06,438 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'SGDJPY'.
+2025-06-06 11:10:06,454 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCAD'.
+2025-06-06 11:10:06,482 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCHF'.
+2025-06-06 11:10:06,501 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCNH'.
+2025-06-06 11:10:06,523 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDCZK'.
+2025-06-06 11:10:06,540 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDJPY'.
+2025-06-06 11:10:06,566 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDMXN'.
+2025-06-06 11:10:06,591 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDNOK'.
+2025-06-06 11:10:06,609 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDPLN'.
+2025-06-06 11:10:06,634 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSEK'.
+2025-06-06 11:10:06,651 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDSGD'.
+2025-06-06 11:10:06,667 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTHB'.
+2025-06-06 11:10:06,690 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTRY'.
+2025-06-06 11:10:06,711 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDZAR'.
+2025-06-06 11:10:06,732 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'ZARJPY'.
+2025-06-06 11:10:06,763 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAUUSD'.
+2025-06-06 11:10:06,786 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'XAGUSD'.
+2025-06-06 11:10:06,810 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'BTCUSD'.
+2025-06-06 11:10:06,838 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UK100'.
+2025-06-06 11:10:06,859 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'DE30'.
+2025-06-06 11:10:06,890 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'AUS200'.
+2025-06-06 11:10:06,911 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'FR40'.
+2025-06-06 11:10:06,931 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US100'.
+2025-06-06 11:10:06,956 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US500'.
+2025-06-06 11:10:06,977 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000'.
+2025-06-06 11:10:07,002 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US30'.
+2025-06-06 11:10:07,031 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'JP225'.
+2025-06-06 11:10:07,104 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'IND50'.
+2025-06-06 11:10:07,215 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'CN50U'.
+2025-06-06 11:10:07,336 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'HKG50'.
+2025-06-06 11:10:07,353 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USOIL'.
+2025-06-06 11:10:07,363 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'UKOIL'.
+2025-06-06 11:10:07,390 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'NGAS'.
+2025-06-06 11:10:07,440 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'USDTUSD'.
+2025-06-06 11:10:07,474 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'US2000-1'.
+2025-06-06 11:10:07,501 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'GER30-1'.
+2025-06-06 11:10:07,530 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'W20'.
+2025-06-06 11:10:07,564 - DEBUG - app.core.cache - Group-symbol settings cached for group 'Group B', symbol 'D30'.
+2025-06-06 11:10:28,728 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:10:28,728 - INFO - app.main - APScheduler shut down gracefully.
+2025-06-06 11:10:28,729 - INFO - app.main - Cancelling 2 other background tasks...
+2025-06-06 11:10:28,731 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:10:29,113 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:10:29,114 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:10:29,114 - INFO - app.main - Background task 'firebase_listener' cancelled successfully.
+2025-06-06 11:10:29,115 - INFO - app.main - Redis client connection closed.
+2025-06-06 11:10:29,115 - INFO - app.main - Application shutdown event finished.
+2025-06-06 11:36:05,088 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:36:05,102 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:36:05,107 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:36:05,107 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:36:41,182 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:36:41,205 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:36:41,213 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:36:41,213 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:37:24,002 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:37:24,018 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:37:24,024 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:37:24,024 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:40:42,960 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:40:42,980 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:40:42,985 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:40:42,985 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:40:43,409 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:40:43,440 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:40:43,441 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:40:43,472 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:40:43,499 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:40:43,568 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:40:43,570 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:40:43,573 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:40:45,165 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:40:45,166 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzA0MywiaWF0IjoxNzQ5MjM1MjQzfQ.xIQrTp3ZHOK8ju8YRRtkWcarRkL7722oOmvPH4RE1ug
+2025-06-06 11:40:45,166 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:40:45,166 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:40:45,167 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:40:45,168 - INFO - app.main - Application startup event finished.
+2025-06-06 11:40:45,169 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:40:45,170 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:40:45,887 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:40:45,888 - INFO - app.main - Redis ping response: True
+2025-06-06 11:41:07,612 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:41:10,924 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:41:10,924 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:41:10,924 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:41:10,924 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:41:10,925 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:41:10,993 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:41:10,993 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:41:10,994 - INFO - app.main - Redis connection closed.
+2025-06-06 11:41:10,994 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:41:10,994 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:41:12,258 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:41:12,274 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:41:12,279 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:41:12,279 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:41:12,678 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:41:12,707 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:41:12,708 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:41:12,725 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:41:12,740 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:41:12,782 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:41:12,783 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:41:12,787 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:41:14,284 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:41:14,285 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzA3MiwiaWF0IjoxNzQ5MjM1MjcyfQ.k9kCUmDRJkkJ-_6Y2TZX691CCfOAKm1WsLBw6uLdHk0
+2025-06-06 11:41:14,285 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:41:14,285 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:41:14,286 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:41:14,286 - INFO - app.main - Application startup event finished.
+2025-06-06 11:41:14,287 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:41:14,288 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:41:15,266 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:41:15,284 - INFO - app.main - Redis ping response: True
+2025-06-06 11:41:54,256 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:41:55,344 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:41:55,345 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:41:55,345 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:41:55,345 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:41:55,345 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:41:56,886 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:41:56,886 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:41:56,886 - INFO - app.main - Redis connection closed.
+2025-06-06 11:41:56,886 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:41:56,886 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:41:58,336 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:41:58,355 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:41:58,360 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:41:58,361 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:41:58,828 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:41:58,861 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:41:58,861 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:41:58,882 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:41:58,906 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:41:58,977 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:41:58,981 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:41:58,984 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:41:59,741 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:41:59,741 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzExOCwiaWF0IjoxNzQ5MjM1MzE4fQ.7zY9Ej3O-m3xFwmpFpDuRWhUZfICneblFA9S0eXf2mA
+2025-06-06 11:41:59,742 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:41:59,742 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:41:59,747 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:41:59,747 - INFO - app.main - Application startup event finished.
+2025-06-06 11:41:59,748 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:41:59,749 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:42:00,320 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:42:00,321 - INFO - app.main - Redis ping response: True
+2025-06-06 11:42:44,633 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:42:44,694 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:42:44,701 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:42:44,702 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:42:45,596 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:42:45,631 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:42:45,631 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:42:45,680 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:42:45,706 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:42:45,777 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:42:45,780 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:42:45,785 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:42:46,920 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:42:46,920 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzE2NSwiaWF0IjoxNzQ5MjM1MzY1fQ.UxAjr7bDR8e_xpIdYdKuet2m4wwCLhlIA-9IElfI134
+2025-06-06 11:42:46,920 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:42:46,920 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:42:46,921 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:42:46,921 - INFO - app.main - Application startup event finished.
+2025-06-06 11:42:46,922 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:42:46,923 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:42:47,018 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:42:47,498 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:42:47,508 - INFO - app.main - Redis ping response: True
+2025-06-06 11:42:50,397 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:42:50,397 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:42:50,397 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:42:50,397 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:42:50,398 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:42:52,258 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:42:52,259 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:42:52,262 - INFO - app.main - Redis connection closed.
+2025-06-06 11:42:52,263 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:42:52,263 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:46:36,998 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:46:37,796 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:46:37,797 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:46:37,797 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:46:37,797 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:46:37,800 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:46:39,287 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:46:39,288 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:46:39,290 - INFO - app.main - Redis connection closed.
+2025-06-06 11:46:39,291 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:46:39,291 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:46:40,757 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:46:40,773 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:46:40,778 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:46:40,779 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:46:41,404 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:46:41,440 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:46:41,440 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:46:41,458 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:46:41,474 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:46:41,540 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:46:41,544 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:46:41,553 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:46:43,016 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:46:43,017 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzQwMSwiaWF0IjoxNzQ5MjM1NjAxfQ.fX28jvcwLDhG9PvqR7dYLXyd4YPUuYkXtmlCkFdR15o
+2025-06-06 11:46:43,017 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:46:43,017 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:46:43,017 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:46:43,018 - INFO - app.main - Application startup event finished.
+2025-06-06 11:46:43,018 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:46:43,019 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:46:43,663 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:46:43,664 - INFO - app.main - Redis ping response: True
+2025-06-06 11:46:55,826 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 11:48:46,575 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:48:48,841 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:48:48,842 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:48:48,842 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:48:48,842 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:48:48,844 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:48:51,135 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:48:51,135 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:48:51,136 - INFO - app.main - Redis connection closed.
+2025-06-06 11:48:51,136 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:48:51,136 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:48:52,599 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:48:52,622 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:48:52,632 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:48:52,632 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:48:53,149 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:48:53,181 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:48:53,181 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:48:53,201 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:48:53,214 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:48:53,297 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:48:53,299 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:48:53,304 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:48:54,244 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:48:54,244 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzUzMywiaWF0IjoxNzQ5MjM1NzMzfQ.fS8j4GdUEryg-DxChDV3CLyPv8Zu4Kt2Wg5_kDPTkwk
+2025-06-06 11:48:54,244 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:48:54,244 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:48:54,245 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:48:54,245 - INFO - app.main - Application startup event finished.
+2025-06-06 11:48:54,245 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:48:54,245 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:48:54,867 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:48:54,886 - INFO - app.main - Redis ping response: True
+2025-06-06 11:49:27,759 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:49:29,945 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:49:29,946 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:49:29,946 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:49:29,946 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:49:29,948 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:49:30,287 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:49:30,287 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:49:30,288 - INFO - app.main - Redis connection closed.
+2025-06-06 11:49:30,288 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:49:30,288 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:49:31,786 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:49:31,801 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:49:31,806 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:49:31,806 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:49:32,220 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:49:32,252 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:49:32,252 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:49:32,282 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:49:32,304 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:49:32,381 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:49:32,385 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:49:32,390 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:49:33,768 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:49:33,768 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzNzU3MiwiaWF0IjoxNzQ5MjM1NzcyfQ.Uc-oG0KRONzEnuX8Z7ejVjHkyqdVLS9KMcKlsk_hyiM
+2025-06-06 11:49:33,768 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:49:33,768 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:49:33,769 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:49:33,769 - INFO - app.main - Application startup event finished.
+2025-06-06 11:49:33,770 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:49:33,770 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:49:34,451 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:49:34,472 - INFO - app.main - Redis ping response: True
+2025-06-06 11:50:07,684 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:50:09,520 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:50:09,520 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:50:09,521 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:50:09,521 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:50:09,523 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:50:11,868 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:50:11,868 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:50:11,869 - INFO - app.main - Redis connection closed.
+2025-06-06 11:50:11,869 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:50:11,869 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:55:23,708 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:55:23,723 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:55:23,727 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:55:23,727 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:57:35,942 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:57:35,961 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:57:35,967 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:57:35,967 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:57:36,443 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:57:36,476 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:57:36,476 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:57:36,506 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:57:36,531 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:57:36,588 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:57:36,593 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:57:36,596 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:57:37,403 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:57:37,403 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzODA1NiwiaWF0IjoxNzQ5MjM2MjU2fQ.dcfYP39Czh9LBw2wUhKQ1sJfUCjV-q_LjriY_sCiNpc
+2025-06-06 11:57:37,403 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:57:37,403 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:57:37,404 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:57:37,404 - INFO - app.main - Application startup event finished.
+2025-06-06 11:57:37,405 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:57:37,405 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:57:38,029 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:57:38,043 - INFO - app.main - Redis ping response: True
+2025-06-06 11:58:13,644 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:58:18,101 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:58:18,102 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:58:18,102 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:58:18,102 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:58:18,104 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:58:20,203 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:58:20,203 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:58:20,204 - INFO - app.main - Redis connection closed.
+2025-06-06 11:58:20,204 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:58:20,204 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:58:21,885 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:58:21,905 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:58:21,911 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:58:21,911 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:58:22,290 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:58:22,322 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:58:22,323 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:58:22,346 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:58:22,367 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:58:22,443 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:58:22,445 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:58:22,452 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:58:23,944 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:58:23,944 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzODEwMiwiaWF0IjoxNzQ5MjM2MzAyfQ.mtonVXcVqujmKU_d5L1pw_37mnGIy8r3lEUYOtvELNg
+2025-06-06 11:58:23,944 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:58:23,944 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:58:23,945 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:58:23,945 - INFO - app.main - Application startup event finished.
+2025-06-06 11:58:23,946 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:58:23,946 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:58:24,921 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:58:24,934 - INFO - app.main - Redis ping response: True
+2025-06-06 11:58:24,936 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:58:27,034 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:58:27,035 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:58:27,035 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:58:27,037 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:58:27,037 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:58:27,039 - INFO - app.main - Redis connection closed.
+2025-06-06 11:58:27,039 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:58:27,039 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:58:29,228 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:58:29,256 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:58:29,263 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:58:29,263 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:58:29,852 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:58:29,891 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:58:29,891 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:58:29,918 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:58:29,943 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:58:30,029 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:58:30,033 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:58:30,041 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:58:31,089 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:58:31,089 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzODExMCwiaWF0IjoxNzQ5MjM2MzEwfQ.0cid5DQ_910EiJVchyPcfklUviHhAUbjZH_vawi9pY8
+2025-06-06 11:58:31,089 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:58:31,089 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:58:31,090 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:58:31,090 - INFO - app.main - Application startup event finished.
+2025-06-06 11:58:31,090 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:58:31,091 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:58:31,818 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:58:31,860 - INFO - app.main - Redis ping response: True
+2025-06-06 11:59:39,272 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:59:41,929 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:59:41,930 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:59:41,930 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:59:41,930 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:59:41,930 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:59:42,951 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:59:42,952 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:59:42,953 - INFO - app.main - Redis connection closed.
+2025-06-06 11:59:42,954 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:59:42,954 - INFO - app.main - Application shutdown complete.
+2025-06-06 11:59:44,426 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 11:59:44,442 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 11:59:44,447 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 11:59:44,447 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 11:59:44,838 - INFO - app.main - Application startup event triggered.
+2025-06-06 11:59:44,878 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 11:59:44,878 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 11:59:44,897 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 11:59:44,915 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 11:59:44,960 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 11:59:44,964 - INFO - app.main - Database tables ensured/created.
+2025-06-06 11:59:44,970 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 11:59:46,123 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 11:59:46,123 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzODE4NCwiaWF0IjoxNzQ5MjM2Mzg0fQ.uSxqmXAGt6bKqFA63UdMY8h9KtI9QZEpbY1FwDpj4eo
+2025-06-06 11:59:46,123 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 11:59:46,123 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 11:59:46,124 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 11:59:46,124 - INFO - app.main - Application startup event finished.
+2025-06-06 11:59:46,125 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:59:46,125 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 11:59:47,326 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 11:59:47,341 - INFO - app.main - Redis ping response: True
+2025-06-06 11:59:48,611 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 11:59:52,348 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 11:59:52,348 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 11:59:52,348 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 11:59:52,348 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 11:59:52,349 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 11:59:54,427 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 11:59:54,427 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 11:59:54,428 - INFO - app.main - Redis connection closed.
+2025-06-06 11:59:54,428 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 11:59:54,428 - INFO - app.main - Application shutdown complete.
+2025-06-06 12:07:44,867 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 12:07:44,885 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 12:07:44,891 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 12:07:44,891 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 12:07:45,434 - INFO - app.main - Application startup event triggered.
+2025-06-06 12:07:45,473 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 12:07:45,474 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 12:07:45,499 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 12:07:45,559 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 12:07:45,645 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 12:07:45,648 - INFO - app.main - Database tables ensured/created.
+2025-06-06 12:07:45,653 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 12:07:47,370 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 12:07:47,370 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzODY2NSwiaWF0IjoxNzQ5MjM2ODY1fQ.rPBFPUimVLi8xhWoy-UfXOIfvkvxvTsbIuD6XhetzRo
+2025-06-06 12:07:47,370 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 12:07:47,370 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 12:07:47,371 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 12:07:47,371 - INFO - app.main - Application startup event finished.
+2025-06-06 12:07:47,372 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 12:07:47,372 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 12:07:48,145 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 12:07:48,166 - INFO - app.main - Redis ping response: True
+2025-06-06 12:07:51,069 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:51,073 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:07:51,846 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:54,661 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:54,726 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:54,733 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:07:54,739 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:57,597 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:57,671 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:07:57,673 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:07:57,681 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:00,815 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:00,847 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:00,859 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:00,870 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:03,790 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:03,872 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:03,879 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:03,885 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:06,674 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:06,879 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:06,885 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:06,890 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:09,841 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:09,894 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:09,900 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:09,907 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:13,128 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:13,199 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:13,203 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:13,211 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:15,875 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:15,943 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:15,947 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:15,956 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:18,544 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:18,602 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:18,604 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:08:18,609 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:08:20,669 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 12:08:23,285 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 12:08:23,286 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 12:08:23,286 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 12:08:23,286 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 12:08:23,288 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 12:08:24,164 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 12:08:24,164 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 12:08:24,166 - INFO - app.main - Redis connection closed.
+2025-06-06 12:08:24,166 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 12:08:24,166 - INFO - app.main - Application shutdown complete.
+2025-06-06 12:15:21,558 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 12:15:54,829 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 12:15:54,846 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 12:15:54,851 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 12:15:54,852 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 12:15:55,387 - INFO - app.main - Application startup event triggered.
+2025-06-06 12:15:55,442 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 12:15:55,443 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 12:15:55,462 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 12:15:55,489 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 12:15:55,527 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 12:15:55,529 - INFO - app.main - Database tables ensured/created.
+2025-06-06 12:15:55,534 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 12:15:57,236 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 12:15:57,236 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTIzOTE1NSwiaWF0IjoxNzQ5MjM3MzU1fQ.j3sjBZfFaIs-38m4HhSNMmhCMAoGJ7vLHITUTT_Ny08
+2025-06-06 12:15:57,236 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 12:15:57,236 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 12:15:57,236 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 12:15:57,236 - INFO - app.main - Application startup event finished.
+2025-06-06 12:15:57,237 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 12:15:57,237 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 12:15:57,909 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 12:15:57,950 - INFO - app.main - Redis ping response: True
+2025-06-06 12:16:03,224 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:16:03,235 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:17:20,619 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 12:17:20,620 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 12:17:33,579 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 22:27:50,026 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 22:27:50,056 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 22:27:50,063 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 22:27:50,063 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 22:27:50,812 - INFO - app.main - Application startup event triggered.
+2025-06-06 22:27:50,848 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 22:27:50,849 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 22:27:50,903 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 22:27:50,926 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 22:27:50,990 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 22:27:50,992 - INFO - app.main - Database tables ensured/created.
+2025-06-06 22:27:50,995 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 22:27:52,163 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 22:27:52,163 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3NTg3MCwiaWF0IjoxNzQ5Mjc0MDcwfQ.CiyG7TtH1CflPXSP3Isz7aBzbzjRUhPiPR0jHbZItIQ
+2025-06-06 22:27:52,164 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 22:27:52,164 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 22:27:52,164 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 22:27:52,164 - INFO - app.main - Application startup event finished.
+2025-06-06 22:27:52,164 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:27:52,165 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 22:27:53,091 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:27:53,103 - INFO - app.main - Redis ping response: True
+2025-06-06 22:30:00,735 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 22:30:00,736 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3NjAwMCwiaWF0IjoxNzQ5Mjc0MjAwfQ.5wYYvQvHwhd4ehzYx5RyXv4nRbceVwQ66TgxoPLmIkI
+2025-06-06 22:30:16,061 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:30:16,066 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 22:30:34,817 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:30:34,820 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 22:31:48,823 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 22:31:53,432 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 22:31:53,433 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 22:31:53,433 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 22:31:53,433 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 22:31:53,433 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 22:32:23,014 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 22:32:23,014 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 22:32:23,016 - INFO - app.main - Redis connection closed.
+2025-06-06 22:32:23,016 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 22:32:23,016 - INFO - app.main - Application shutdown complete.
+2025-06-06 22:32:24,830 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 22:32:24,847 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 22:32:24,853 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 22:32:24,853 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 22:32:25,332 - INFO - app.main - Application startup event triggered.
+2025-06-06 22:32:25,367 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 22:32:25,367 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 22:32:25,391 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 22:32:25,418 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 22:32:25,486 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 22:32:25,489 - INFO - app.main - Database tables ensured/created.
+2025-06-06 22:32:25,497 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 22:32:26,597 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 22:32:26,597 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3NjE0NSwiaWF0IjoxNzQ5Mjc0MzQ1fQ.0DIZg9R4goBdSE6ZdGwrFBZUwl4cubdZM1n0rTKiOVA
+2025-06-06 22:32:26,597 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 22:32:26,597 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 22:32:26,597 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 22:32:26,598 - INFO - app.main - Application startup event finished.
+2025-06-06 22:32:26,598 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:32:26,598 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 22:32:27,222 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:32:27,224 - INFO - app.main - Redis ping response: True
+2025-06-06 22:32:56,390 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:32:56,392 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 22:32:57,240 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:32:57,980 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:32:58,003 - ERROR - app.core.cache - Error getting group symbol settings cache for Group B:ALL: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\core\cache.py", line 317, in get_group_symbol_settings_cache
+    key_str = key.decode('utf-8')
+              ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+2025-06-06 22:32:58,004 - ERROR - app.services.portfolio_calculator - Error calculating portfolio: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\services\portfolio_calculator.py", line 132, in calculate_user_portfolio
+    raw_market_data = await get_latest_market_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2025-06-06 22:38:19,169 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 22:38:22,815 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 22:38:22,815 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 22:38:22,815 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 22:38:22,815 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 22:38:22,816 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 22:38:27,318 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 22:38:27,319 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 22:38:27,320 - INFO - app.main - Redis connection closed.
+2025-06-06 22:38:27,320 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 22:38:27,320 - INFO - app.main - Application shutdown complete.
+2025-06-06 22:40:23,877 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 22:40:23,910 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 22:40:23,916 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 22:40:23,916 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 22:40:24,431 - INFO - app.main - Application startup event triggered.
+2025-06-06 22:40:24,468 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 22:40:24,468 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 22:40:24,551 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 22:40:24,580 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 22:40:24,647 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 22:40:24,650 - INFO - app.main - Database tables ensured/created.
+2025-06-06 22:40:24,656 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 22:40:25,891 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 22:40:25,891 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3NjYyNCwiaWF0IjoxNzQ5Mjc0ODI0fQ.77BF9ILhMjsPpYTVX4Str1hyCbzl1n7g0ZWS0BZLWnA
+2025-06-06 22:40:25,891 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 22:40:25,891 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 22:40:25,892 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 22:40:25,892 - INFO - app.main - Application startup event finished.
+2025-06-06 22:40:25,893 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:40:25,893 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 22:40:26,547 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:40:26,574 - INFO - app.main - Redis ping response: True
+2025-06-06 22:52:53,463 - ERROR - app.database.session - Database session error: 401: Invalid email, user type, or password
+Traceback (most recent call last):
+  File "C:\Users\Dhanush\FASTAPI\app\database\session.py", line 55, in get_db
+    yield session
+  File "C:\Users\Dhanush\FASTAPI\venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dhanush\FASTAPI\venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhanush\FASTAPI\app\api\v1\endpoints\users.py", line 233, in login_with_user_type
+    raise HTTPException(
+    ...<3 lines>...
+    )
+fastapi.exceptions.HTTPException: 401: Invalid email, user type, or password
+2025-06-06 22:54:07,739 - INFO - app.api.v1.endpoints.users - Saved uploaded file 133841132833576236.jpg to ./uploads/proofs\36568e85-9c81-491a-93b6-473a2a044dbb.jpg, storing path /static/proofs\36568e85-9c81-491a-93b6-473a2a044dbb.jpg
+2025-06-06 22:54:07,749 - INFO - app.api.v1.endpoints.users - Saved uploaded file 133841132833576236.jpg to ./uploads/proofs\b7c78572-2122-4cbc-827d-c164c6fdd265.jpg, storing path /static/proofs\b7c78572-2122-4cbc-827d-c164c6fdd265.jpg
+2025-06-06 22:54:27,742 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 22:54:28,823 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 22:54:28,823 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 22:54:28,823 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 22:54:28,824 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 22:54:28,825 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 22:54:48,699 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 22:54:48,699 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 22:54:48,700 - INFO - app.main - Redis connection closed.
+2025-06-06 22:54:48,700 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 22:54:48,700 - INFO - app.main - Application shutdown complete.
+2025-06-06 22:59:18,122 - INFO - app.shared_state - Initialized redis_publish_queue in shared_state with maxsize=500.
+2025-06-06 22:59:18,139 - INFO - app.core.config - .env file loaded successfully.
+2025-06-06 22:59:18,145 - INFO - app.core.config - Settings instance loaded. Project: Trading App, API Prefix: /api/v1
+2025-06-06 22:59:18,145 - INFO - app.database.session - Attempting to connect to database using URL: mysql+aiomysql://roo...
+2025-06-06 22:59:18,595 - INFO - app.main - Application startup event triggered.
+2025-06-06 22:59:18,632 - INFO - app.main - Firebase Admin SDK already initialized.
+2025-06-06 22:59:18,632 - WARNING - app.dependencies.redis_client - Redis client not initialized, attempting late connection.
+2025-06-06 22:59:18,673 - INFO - app.main - Redis client initialized successfully.
+2025-06-06 22:59:18,709 - INFO - app.database.session - Running Base.metadata.create_all...
+2025-06-06 22:59:18,777 - INFO - app.database.session - Base.metadata.create_all finished.
+2025-06-06 22:59:18,779 - INFO - app.main - Database tables ensured/created.
+2025-06-06 22:59:18,784 - INFO - app.main - APScheduler started with jobs for daily swap and JWT rotation.
+2025-06-06 22:59:19,917 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 22:59:19,917 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3Nzc1OCwiaWF0IjoxNzQ5Mjc1OTU4fQ.x0KHpKyOhw0CtZ-xUiiR0_Xlm4q2xZSIZ4XbhC7Pjgk
+2025-06-06 22:59:19,917 - INFO - app.main - Firebase stream processing task scheduled.
+2025-06-06 22:59:19,917 - INFO - app.main - Redis publisher task scheduled.
+2025-06-06 22:59:19,917 - INFO - app.main - Portfolio background worker started successfully.
+2025-06-06 22:59:19,918 - INFO - app.main - Application startup event finished.
+2025-06-06 22:59:19,918 - INFO - app.firebase_stream - Starting Firebase Admin event processing task for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:59:19,918 - INFO - app.firebase_stream - Attempting to start Firebase Admin listener for path: 'datafeeds'.
+2025-06-06 22:59:20,650 - INFO - app.firebase_stream - Firebase Admin listener started successfully for path: 'datafeeds'. Queuing data for Redis publishing.
+2025-06-06 22:59:20,668 - INFO - app.main - Redis ping response: True
+2025-06-06 22:59:33,555 - INFO - app.api.v1.endpoints.users - Saved uploaded file 133841132833576236.jpg to ./uploads/proofs\bf72c094-a3d1-4e52-8585-a026caf278c8.jpg, storing path /static/proofs\bf72c094-a3d1-4e52-8585-a026caf278c8.jpg
+2025-06-06 22:59:33,563 - INFO - app.api.v1.endpoints.users - Saved uploaded file 133841132833576236.jpg to ./uploads/proofs\06907923-f4b3-484b-a5ac-2894f4ca54c5.jpg, storing path /static/proofs\06907923-f4b3-484b-a5ac-2894f4ca54c5.jpg
+2025-06-06 23:00:00,343 - INFO - app.main - Service account JWT pushed to Firebase.
+2025-06-06 23:00:00,343 - INFO - app.main - Generated service account JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlIiwic2VydmljZV9uYW1lIjoicHl0aG9uX2JyaWRnZSIsImV4cCI6MTc0OTI3NzgwMCwiaWF0IjoxNzQ5Mjc2MDAwfQ.o_bBYk0gH6LAqmmDNcuj9ArQ4dITa0C0vKSNrMWrDeE
+2025-06-06 23:11:38,161 - INFO - app.main - Application shutdown event triggered.
+2025-06-06 23:11:41,827 - INFO - app.main - Portfolio background worker stopped.
+2025-06-06 23:11:41,828 - INFO - app.main - APScheduler shutdown complete.
+2025-06-06 23:11:41,828 - INFO - app.main - Cancelling background task: redis_publisher_task
+2025-06-06 23:11:41,828 - INFO - app.main - Cancelling background task: firebase_listener
+2025-06-06 23:11:41,830 - INFO - app.firebase_stream - Firebase event processing task cancelled.
+2025-06-06 23:11:50,516 - INFO - app.firebase_stream - Firebase listener closed.
+2025-06-06 23:11:50,516 - INFO - app.firebase_stream - Firebase Admin event processing task finished.
+2025-06-06 23:11:50,518 - INFO - app.main - Redis connection closed.
+2025-06-06 23:11:50,518 - INFO - app.main - Firebase resources cleaned up.
+2025-06-06 23:11:50,518 - INFO - app.main - Application shutdown complete.

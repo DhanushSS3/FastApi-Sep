@@ -363,3 +363,1307 @@
 2025-06-06 09:54:22,705 DEBUG [get_order_model] Returning DemoUserOrder
 2025-06-06 09:54:22,707 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
 2025-06-06 09:54:22,735 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:33,935 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:33,937 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:33,940 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:33,984 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:35,912 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:35,914 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:35,916 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:35,933 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:35,936 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:35,937 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:35,953 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:38,812 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:38,813 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:38,815 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:38,835 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:38,841 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:38,843 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:38,875 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:40,549 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:40,550 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:40,552 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:40,572 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:40,578 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:40,581 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:40,613 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:43,140 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:43,142 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:43,143 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:43,161 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:43,168 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:43,169 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:43,186 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:45,146 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:45,147 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:45,151 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:45,180 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:45,184 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:45,185 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:45,210 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:47,577 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:47,579 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:47,580 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:47,600 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:47,610 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:47,611 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:47,644 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:49,796 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:49,797 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:49,799 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:49,817 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:49,826 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:49,828 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:49,848 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:52,296 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:52,298 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:52,301 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:52,322 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:52,333 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:52,335 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:52,361 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:54,497 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:54,498 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:54,499 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:54,519 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:54,523 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:54,524 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:54,554 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:56,864 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:56,865 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:56,867 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:56,882 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:56,887 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:56,896 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:56,916 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:57:58,983 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:58,986 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:58,988 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:57:59,002 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:57:59,006 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:57:59,007 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:57:59,021 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:01,373 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:01,374 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:01,377 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:01,390 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:01,394 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:01,395 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:01,407 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:03,422 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:03,423 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:03,424 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:03,430 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:03,432 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:03,433 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:03,440 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:05,668 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:05,668 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:05,669 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:05,675 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:05,677 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:05,678 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:05,689 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:07,887 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:07,887 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:07,888 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:07,894 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:07,895 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:07,896 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:07,900 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:10,377 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:10,377 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:10,378 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:10,387 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:10,390 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:10,390 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:10,396 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:12,533 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:12,534 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:12,535 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:12,541 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:12,545 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:12,545 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:12,556 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:15,004 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:15,004 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:15,005 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:15,013 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:15,015 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:15,016 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:15,024 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:17,185 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:17,186 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:17,186 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:17,192 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:17,194 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:17,195 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:17,202 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:19,495 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:19,496 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:19,496 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:19,503 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:19,505 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:19,506 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:19,512 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:21,761 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:21,762 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:21,763 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:21,768 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:21,770 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:21,771 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:21,776 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:24,104 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:24,104 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:24,105 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:24,111 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:24,112 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:24,113 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:24,118 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:26,425 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:26,425 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:26,426 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:26,432 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:26,433 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:26,434 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:26,440 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:28,746 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:28,747 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:28,747 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:28,753 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:28,755 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:28,756 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:28,762 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:30,970 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:30,971 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:30,971 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:30,975 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:30,976 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:30,976 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:30,981 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:33,442 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:33,443 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:33,444 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:33,453 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:33,456 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:33,457 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:33,465 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:35,613 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:35,613 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:35,613 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:35,618 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:35,620 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:35,620 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:35,626 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 09:58:37,995 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:37,995 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:37,996 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 09:58:38,001 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 09:58:38,003 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 09:58:38,004 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 09:58:38,010 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:58:43,996 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:43,996 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:43,997 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:44,015 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:48,771 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:48,772 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:48,777 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:48,833 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:48,836 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:48,836 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:48,886 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:58:51,150 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:51,151 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:51,152 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:51,160 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:51,163 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:51,163 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:51,180 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:58:53,399 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:53,400 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:53,401 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:53,415 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:53,418 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:53,419 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:53,430 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:58:55,740 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:55,741 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:55,742 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:55,766 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:55,776 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:55,778 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:55,800 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:58:58,240 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:58,253 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:58,259 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:58:58,312 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:58:58,314 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:58:58,314 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:58:58,321 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:00,266 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:00,267 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:00,268 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:00,277 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:00,278 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:00,279 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:00,294 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:02,731 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:02,731 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:02,731 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:02,745 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:02,748 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:02,748 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:02,764 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:04,975 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:04,975 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:04,976 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:05,017 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:05,035 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:05,039 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:05,077 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:07,317 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:07,318 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:07,318 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:07,322 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:07,323 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:07,323 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:07,327 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:09,708 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:09,709 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:09,713 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:09,725 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:09,730 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:09,730 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:09,741 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:11,871 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:11,872 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:11,873 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:11,884 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:11,889 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:11,891 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:11,908 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:14,228 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:14,229 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:14,229 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:14,240 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:14,243 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:14,244 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:14,254 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:16,455 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:16,456 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:16,456 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:16,467 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:16,469 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:16,481 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:16,592 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:18,832 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:18,832 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:18,833 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:18,847 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:18,850 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:18,852 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:18,864 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:21,040 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:21,040 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:21,041 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:21,050 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:21,054 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:21,055 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:21,065 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:23,372 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:23,372 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:23,373 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:23,380 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:23,383 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:23,383 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:23,393 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:25,706 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:25,706 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:25,707 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:25,717 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:25,720 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:25,721 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:25,735 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:27,896 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:27,898 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:27,900 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:27,910 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:27,914 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:27,914 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:27,920 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:30,261 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:30,262 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:30,263 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:30,272 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:30,275 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:30,275 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:30,285 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:32,519 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:32,520 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:32,521 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:32,530 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:32,534 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:32,536 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:32,550 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:34,830 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:34,831 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:34,832 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:34,850 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:34,852 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:34,854 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:34,865 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:37,085 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:37,085 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:37,086 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:37,100 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:37,104 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:37,107 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:37,127 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:39,532 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:39,533 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:39,533 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:39,550 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:39,552 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:39,555 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:39,580 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:41,980 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:41,981 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:41,981 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:42,012 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:42,013 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:42,017 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:42,045 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:44,031 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:44,032 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:44,034 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:44,049 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:44,051 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:44,052 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:44,075 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:46,495 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:46,495 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:46,497 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:46,591 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:46,602 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:46,603 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:46,609 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:48,634 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:48,635 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:48,636 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:48,650 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:48,653 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:48,654 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:48,674 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:51,047 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:51,050 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:51,051 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:51,073 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:51,079 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:51,080 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:51,098 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:53,307 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:53,310 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:53,312 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:53,323 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:53,327 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:53,328 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:53,351 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:55,582 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:55,582 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:55,582 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:55,598 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:55,609 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:55,612 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:55,621 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 10:59:58,110 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:58,112 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:58,116 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 10:59:58,164 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 10:59:58,171 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 10:59:58,175 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 10:59:58,207 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:01,109 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:01,117 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:01,120 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:01,164 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:01,181 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:01,187 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:01,228 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:02,778 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:02,797 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:02,810 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:02,864 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:02,875 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:02,881 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:02,922 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:04,910 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:04,911 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:04,915 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:04,940 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:04,948 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:04,953 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:04,972 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:07,590 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:07,598 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:07,608 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:07,705 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:07,728 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:07,734 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:07,747 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:09,803 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:09,806 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:09,808 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:09,817 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:09,824 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:09,838 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:09,892 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:12,158 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:12,161 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:12,164 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:12,193 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:12,207 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:12,214 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:12,254 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:14,158 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:14,164 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:14,167 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:14,193 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:14,199 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:14,202 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:14,227 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:16,341 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:16,343 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:16,346 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:16,365 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:16,372 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:16,373 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:16,380 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:18,936 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:18,942 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:18,949 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:18,987 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:19,004 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:19,007 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:19,033 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:20,971 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:20,974 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:20,975 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:20,988 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:20,993 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:20,994 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:21,010 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:23,203 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:23,204 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:23,204 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:23,222 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:23,226 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:23,228 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:23,251 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:25,523 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:25,524 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:25,524 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:25,546 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:25,550 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:25,551 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:25,570 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:27,906 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:27,907 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:27,908 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:27,926 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:27,928 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:27,929 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:27,958 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:30,111 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:30,112 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:30,112 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:30,125 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:30,130 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:30,132 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:30,144 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:32,461 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:32,461 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:32,462 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:32,478 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:32,483 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:32,484 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:32,501 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:34,816 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:34,817 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:34,818 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:34,832 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:34,836 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:34,839 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:34,851 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:37,214 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:37,215 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:37,215 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:37,228 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:37,231 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:37,233 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:37,254 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:39,451 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:39,452 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:39,454 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:39,469 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:39,474 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:39,477 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:39,502 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:41,633 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:41,634 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:41,635 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:41,659 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:41,662 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:41,666 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:41,692 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:44,020 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:44,020 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:44,021 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:44,033 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:44,036 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:44,037 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:44,049 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:46,424 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:46,426 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:46,433 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:46,517 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:46,519 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:46,519 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:46,526 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:48,632 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:48,634 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:48,637 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:48,656 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:48,658 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:48,659 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:48,668 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:50,857 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:50,858 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:50,859 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:50,876 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:50,884 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:50,885 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:50,898 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:53,277 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:53,278 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:53,278 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:53,294 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:53,298 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:53,298 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:53,312 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:55,640 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:55,645 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:55,647 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:55,665 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:55,668 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:55,670 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:55,685 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:00:57,902 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:57,903 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:57,905 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:00:57,932 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:00:57,937 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:00:57,941 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:00:57,970 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:00,259 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:00,261 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:00,268 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:00,294 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:00,297 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:00,298 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:00,317 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:02,497 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:02,498 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:02,498 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:02,510 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:02,511 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:02,512 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:02,525 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:04,794 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:04,795 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:04,795 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:04,819 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:04,830 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:04,832 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:04,904 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:07,170 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:07,171 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:07,173 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:07,185 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:07,186 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:07,187 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:07,201 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:09,515 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:09,517 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:09,522 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:09,551 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:09,554 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:09,558 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:09,582 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:11,808 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:11,810 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:11,812 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:11,827 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:11,834 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:11,835 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:11,852 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:14,039 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:14,042 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:14,044 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:14,065 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:14,070 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:14,072 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:14,100 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:16,362 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:16,363 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:16,363 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:16,378 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:16,383 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:16,383 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:16,407 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:18,767 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:18,769 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:18,769 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:18,780 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:18,782 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:18,783 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:18,802 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:20,980 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:20,984 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:20,990 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:21,014 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:21,017 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:21,018 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:21,033 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:23,218 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:23,219 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:23,220 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:23,233 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:23,237 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:23,237 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:23,245 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:25,550 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:25,551 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:25,552 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:25,564 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:25,568 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:25,570 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:25,580 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:27,903 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:27,904 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:27,904 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:27,919 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:27,922 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:27,924 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:27,950 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:30,185 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:30,186 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:30,187 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:30,196 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:30,199 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:30,200 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:30,213 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:32,541 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:32,541 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:32,542 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:32,552 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:32,555 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:32,556 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:32,563 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:34,686 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:34,687 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:34,688 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:34,699 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:34,701 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:34,702 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:34,709 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:37,021 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:37,022 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:37,023 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:37,034 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:37,037 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:37,038 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:37,052 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:39,452 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:39,453 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:39,455 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:39,481 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:39,489 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:39,489 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:39,498 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:41,708 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:41,708 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:41,709 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:41,719 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:41,722 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:41,723 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:41,734 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:44,068 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:44,068 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:44,068 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:44,081 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:44,084 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:44,085 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:44,095 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:46,276 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:46,276 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:46,277 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:46,288 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:46,290 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:46,291 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:46,300 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:48,559 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:48,560 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:48,560 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:48,568 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:48,571 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:48,574 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:48,594 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:51,005 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:51,006 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:51,007 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:51,037 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:51,042 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:51,046 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:51,062 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:53,185 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:53,186 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:53,187 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:53,196 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:53,199 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:53,201 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:53,210 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:55,557 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:55,557 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:55,558 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:55,566 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:55,568 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:55,569 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:55,581 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:01:57,830 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:57,831 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:57,831 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:01:57,842 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:01:57,847 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:01:57,848 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:01:57,860 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:00,253 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:00,258 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:00,277 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:00,380 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:00,402 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:00,403 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:00,431 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:02,359 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:02,360 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:02,360 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:02,371 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:02,373 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:02,374 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:02,387 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:04,743 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:04,744 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:04,745 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:04,755 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:04,759 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:04,760 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:04,767 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:07,164 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:07,165 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:07,166 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:07,177 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:07,180 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:07,181 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:07,192 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:09,511 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:09,511 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:09,512 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:09,525 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:09,528 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:09,529 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:09,545 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:11,820 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:11,820 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:11,821 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:11,835 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:11,841 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:11,842 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:11,855 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:14,118 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:14,119 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:14,119 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:14,128 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:14,130 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:14,131 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:14,142 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:16,377 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:16,378 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:16,379 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:16,391 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:16,394 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:16,395 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:16,404 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:18,742 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:18,743 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:18,744 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:18,755 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:18,758 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:18,759 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:18,770 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:21,058 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:21,058 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:21,059 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:21,070 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:21,074 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:21,076 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:21,087 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:23,205 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:23,206 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:23,207 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:23,218 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:23,222 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:23,222 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:23,233 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:25,589 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:25,590 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:25,591 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:25,601 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:25,604 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:25,604 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:25,615 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:27,969 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:27,970 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:27,971 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:27,982 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:27,986 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:27,987 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:28,002 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:30,100 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:30,100 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:30,101 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:30,109 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:30,112 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:30,112 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:30,120 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:32,512 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:32,512 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:32,513 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:32,526 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:02:32,528 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:32,529 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:32,539 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 11:02:56,571 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:02:56,574 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:02:56,577 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:02:56,601 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:03:00,098 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:00,099 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:00,100 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:00,138 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:00,140 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:00,141 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:00,158 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:02,450 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:02,451 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:02,451 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:02,460 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:02,462 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:02,464 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:02,474 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:04,723 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:04,723 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:04,724 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:04,734 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:04,736 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:04,737 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:04,750 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:07,093 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:07,093 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:07,094 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:07,104 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:07,108 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:07,111 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:07,125 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:10,207 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:10,209 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:10,212 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:10,237 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:10,242 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:10,244 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:10,264 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:12,085 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:12,099 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:12,109 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:12,131 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:12,132 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:12,133 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:12,139 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:14,397 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:14,398 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:14,398 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:14,414 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:14,421 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:14,424 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:14,450 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:16,622 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:16,623 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:16,624 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:16,652 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:16,654 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:16,655 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:16,681 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:18,967 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:18,968 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:18,969 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:18,985 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:18,991 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:18,991 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:19,005 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:21,189 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:21,190 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:21,191 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:21,206 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:21,210 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:21,214 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:21,223 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:23,513 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:23,516 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:23,516 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:23,525 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:23,528 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:23,529 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:23,542 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:25,830 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:25,830 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:25,831 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:25,846 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:25,853 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:25,854 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:25,870 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:28,251 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:28,254 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:28,256 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:28,293 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:28,306 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:28,321 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:28,389 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:30,460 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:30,461 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:30,461 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:30,473 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:30,477 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:30,480 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:30,501 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:32,817 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:32,818 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:32,819 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:32,830 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:32,834 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:32,836 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:32,850 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:35,084 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:35,085 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:35,086 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:35,095 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:35,097 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:35,098 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:35,108 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:37,304 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:37,305 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:37,306 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:37,318 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:37,321 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:37,322 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:37,333 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:39,594 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:39,594 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:39,595 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:39,607 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:39,610 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:39,612 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:39,623 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:41,918 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:41,919 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:41,919 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:41,929 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:41,932 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:41,933 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:41,942 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:44,293 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:44,301 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:44,314 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:44,373 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:44,387 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:44,396 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:44,455 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:46,513 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:46,515 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:46,515 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:46,526 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:46,529 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:46,530 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:46,543 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:48,864 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:48,865 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:48,866 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:48,881 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:48,884 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:48,884 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:48,898 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:51,199 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:51,200 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:51,201 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:51,210 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:51,212 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:51,213 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:51,223 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:53,524 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:53,525 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:53,525 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:53,538 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:53,540 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:53,541 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:53,553 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:55,795 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:55,796 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:55,796 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:55,804 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:55,806 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:55,807 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:55,819 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:03:58,212 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:58,213 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:58,213 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:03:58,226 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:03:58,230 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:03:58,231 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:03:58,242 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:00,314 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:00,314 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:00,314 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:00,324 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:00,326 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:00,327 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:00,337 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:02,638 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:02,639 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:02,639 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:02,655 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:02,661 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:02,665 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:02,723 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:05,047 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:05,047 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:05,048 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:05,057 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:05,059 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:05,061 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:05,071 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:07,167 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:07,168 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:07,169 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:07,177 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:07,178 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:07,179 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:07,186 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:09,511 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:09,513 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:09,514 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:09,521 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:09,523 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:09,523 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:09,531 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:11,883 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:11,885 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:11,886 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:11,899 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:11,902 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:11,905 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:11,921 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:14,091 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:14,092 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:14,093 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:14,101 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:14,106 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:14,107 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:14,117 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:16,461 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:16,462 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:16,463 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:16,471 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:16,475 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:16,476 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:16,483 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:04:18,777 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:18,778 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:18,779 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:04:18,789 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:04:18,791 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:04:18,792 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:04:18,802 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:05,637 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:10:05,637 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:10:05,638 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:10:05,650 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 11:10:08,633 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:08,633 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:08,634 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:08,659 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:08,661 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:08,662 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:08,675 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:10,974 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:10,977 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:10,978 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:10,987 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:10,988 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:10,989 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:10,999 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:13,248 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:13,249 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:13,250 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:13,259 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:13,262 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:13,263 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:13,273 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:15,543 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:15,546 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:15,546 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:15,554 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:15,556 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:15,557 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:15,565 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:17,922 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:17,923 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:17,923 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:17,931 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:17,933 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:17,937 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:17,944 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:20,112 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:20,113 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:20,114 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:20,121 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:20,124 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:20,125 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:20,136 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:22,459 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:22,459 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:22,460 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:22,469 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:22,470 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:22,470 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:22,480 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:24,729 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:24,731 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:24,731 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:24,742 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:24,744 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:24,745 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:24,754 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:10:26,967 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:26,968 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:26,968 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: UserOrder
+2025-06-06 11:10:26,977 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model UserOrder
+2025-06-06 11:10:26,979 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 11:10:26,980 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 11:10:26,990 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder
+2025-06-06 11:46:55,782 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 11:46:55,783 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 11:46:55,785 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 11:46:55,822 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:07:49,918 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:07:49,919 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:07:49,919 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:07:49,932 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:07:54,671 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:07:54,672 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:07:54,673 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:07:54,688 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:07:54,692 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:07:54,695 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:07:54,712 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:07:57,607 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:07:57,609 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:07:57,611 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:07:57,631 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:07:57,637 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:07:57,637 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:07:57,661 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:00,821 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:00,821 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:00,822 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:00,828 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:00,830 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:00,831 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:00,839 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:03,801 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:03,804 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:03,806 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:03,822 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:03,831 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:03,836 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:03,862 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:06,712 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:06,722 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:06,733 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:06,808 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:06,816 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:06,836 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:06,873 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:09,853 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:09,856 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:09,858 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:09,868 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:09,871 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:09,872 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:09,885 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:13,142 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:13,143 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:13,143 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:13,163 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:13,165 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:13,167 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:13,181 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:15,886 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:15,889 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:15,894 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:15,909 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:15,915 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:15,918 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:15,934 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:08:18,556 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:18,556 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:18,557 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:08:18,576 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:08:18,579 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:08:18,580 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:08:18,593 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 1 orders for user 1 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model DemoUserOrder
+2025-06-06 12:16:00,918 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:16:00,919 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:16:00,919 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:16:00,931 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 12:17:19,807 DEBUG [get_order_model] Called with user_type: 'demo'
+2025-06-06 12:17:19,808 DEBUG [get_order_model] Returning DemoUserOrder
+2025-06-06 12:17:19,808 DEBUG [get_all_open_orders_by_user_id] Called for user 1 with order_model: DemoUserOrder
+2025-06-06 12:17:19,814 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 1 using model DemoUserOrder
+2025-06-06 22:30:14,047 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 22:30:14,050 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 22:30:14,054 DEBUG [get_all_open_orders_by_user_id] Called for user 4 with order_model: UserOrder
+2025-06-06 22:30:14,078 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 4 using model UserOrder
+2025-06-06 22:30:32,723 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 22:30:32,724 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 22:30:32,725 DEBUG [get_all_open_orders_by_user_id] Called for user 4 with order_model: UserOrder
+2025-06-06 22:30:32,738 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 4 using model UserOrder
+2025-06-06 22:32:55,607 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 22:32:55,608 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 22:32:55,608 DEBUG [get_all_open_orders_by_user_id] Called for user 4 with order_model: UserOrder
+2025-06-06 22:32:55,620 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 4 using model UserOrder
+2025-06-06 22:32:57,987 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 22:32:57,987 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 22:32:57,988 DEBUG [get_all_open_orders_by_user_id] Called for user 4 with order_model: UserOrder
+2025-06-06 22:32:57,992 DEBUG [get_all_open_orders_by_user_id] Retrieved 0 open orders for user 4 using model UserOrder
+2025-06-06 22:32:57,993 DEBUG [get_order_model] Called with user_type: 'live'
+2025-06-06 22:32:57,994 DEBUG [get_order_model] Returning UserOrder
+2025-06-06 22:32:58,000 DEBUG [get_orders_by_user_id_and_statuses] Retrieved 0 orders for user 4 with statuses ['BUY_LIMIT', 'SELL_LIMIT', 'BUY_STOP', 'SELL_STOP', 'PENDING'] using model UserOrder

@@ -10003,3 +10003,23 @@ AttributeError: 'ExternalSymbolInfo' object has no attribute 'profit_currency'
 2025-06-06 09:51:33,818 - app.services.order_processing - DEBUG - [MARGIN_TOTAL_CONTRIB] No open positions for User 1, Symbol AUDCAD. Returning zero margin.
 2025-06-06 09:51:33,850 - DEBUG - orders - Inverse conversion for PnL on Close: -1870.000000000000000000000000 CAD / 1.3690900000 = -1365.870760870359143664770030 USD
 2025-06-06 09:54:17,138 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 09:57:30,132 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 10:58:20,711 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:09:57,641 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:40:43,370 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:41:12,634 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:41:58,765 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:42:45,535 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:46:41,370 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:48:53,118 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:49:32,179 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:57:36,388 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:58:22,248 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:58:29,803 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 11:59:44,803 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 12:07:45,399 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 12:15:55,279 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 22:27:50,744 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 22:32:25,284 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 22:40:24,393 - INFO - orders - Application starting up - Orders logging initialized
+2025-06-06 22:59:18,539 - INFO - orders - Application starting up - Orders logging initialized

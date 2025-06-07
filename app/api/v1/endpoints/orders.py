@@ -47,6 +47,7 @@ from app.services.order_processing import (
 from app.services.portfolio_calculator import _convert_to_usd, calculate_user_portfolio
 from app.services.margin_calculator import calculate_single_order_margin, get_live_adjusted_buy_price_for_pair
 from app.services.pending_orders import add_pending_order, remove_pending_order
+from app.services.portfolio_background_worker import notify_account_change
 
 from app.crud import crud_order, user as crud_user, group as crud_group
 from app.crud.crud_order import OrderCreateInternal
@@ -364,6 +365,10 @@ async def place_order(
                 portfolio = await calculate_user_portfolio(user_data, open_positions_dicts, adjusted_market_prices, group_symbol_settings or {}, redis_client)
                 await set_user_portfolio_cache(redis_client, user_id, portfolio)
                 await publish_account_structure_changed_event(redis_client, user_id)
+                
+                # Notify the background worker about the account change
+                await notify_account_change(redis_client, user_id, current_user.user_type)
+                
                 orders_logger.info(f"Portfolio cache updated and websocket event published for user {user_id} after placing order.")
         except Exception as e:
             orders_logger.error(f"Error updating portfolio cache or publishing websocket event after order placement: {e}", exc_info=True)
@@ -417,7 +422,7 @@ async def place_order(
             except Exception as e:
                 orders_logger.error(f"[FIREBASE] Error sending Barclays order to Firebase: {e}", exc_info=True)
 
-        await publish_account_structure_changed_event(redis_client, current_user.id)
+        await notify_account_change(redis_client, current_user.id, current_user.user_type)
         await redis_client.publish("market_data_updates", json.dumps({
             "type": "market_data_update",
             "symbol": "TRIGGER",
@@ -560,7 +565,7 @@ async def place_pending_order(
             created_at=getattr(db_order, 'created_at', None).isoformat() if getattr(db_order, 'created_at', None) else None,
             updated_at=getattr(db_order, 'updated_at', None).isoformat() if getattr(db_order, 'updated_at', None) else None
         )
-        await publish_account_structure_changed_event(redis_client, current_user.id)
+        await notify_account_change(redis_client, current_user.id, current_user.user_type)
         return response
 
     except OrderProcessingError as e:
@@ -677,6 +682,7 @@ async def close_order(
                         )
                         await db.commit() # Commit history tracking
                         await db.refresh(db_order_for_response)
+                        await notify_account_change(redis_client, user_to_operate_on.id, user_type)
                         return OrderResponse.model_validate(db_order_for_response, from_attributes=True)
                     else:
                         raise HTTPException(status_code=404, detail="Order not found for external closure processing.")
@@ -782,6 +788,10 @@ async def close_order(
                                 portfolio = await calculate_user_portfolio(user_data, open_positions_dicts, adjusted_market_prices, group_symbol_settings or {}, redis_client)
                                 await set_user_portfolio_cache(redis_client, user_id, portfolio)
                                 await publish_account_structure_changed_event(redis_client, user_id)
+                                
+                                # Notify the background worker about the account change
+                                await notify_account_change(redis_client, user_id, user_type)
+                                
                                 await redis_client.publish("market_data_updates", json.dumps({
                                     "type": "market_data_update",
                                     "symbol": "TRIGGER",
@@ -792,6 +802,7 @@ async def close_order(
                         except Exception as e:
                             orders_logger.error(f"Error updating portfolio cache or publishing websocket event after order close: {e}", exc_info=True)
 
+                        await notify_account_change(redis_client, user_to_operate_on.id, user_type)
                         return OrderResponse.model_validate(db_order, from_attributes=True)
             else:
                 # Always fetch user_group before logging
@@ -885,7 +896,7 @@ async def close_order(
                 elif order_type_db == "SELL": profit = (entry_price - close_price) * quantity * contract_size
                 else: raise HTTPException(status_code=500, detail="Invalid order type.")
                 
-                profit_usd = await _convert_to_usd(profit, profit_currency, db_user_locked.id, db_order.order_id, "PnL on Close", db=db, redis_client=redis_client) 
+                profit_usd = await _convert_to_usd(profit, profit_currency, db_user_locked.id, db_order.order_id, "PnL on Close", db=db) 
                 if profit_currency != "USD" and profit_usd == profit: 
                     orders_logger.error(f"Order {db_order.order_id}: PnL conversion failed. Rates missing for {profit_currency}/USD.")
                     raise HTTPException(status_code=500, detail=f"Critical: Could not convert PnL from {profit_currency} to USD.")
@@ -917,6 +928,7 @@ async def close_order(
 
                 await db.commit()
                 await db.refresh(db_order)
+                await notify_account_change(redis_client, user_to_operate_on.id, user_type)
                 return OrderResponse.model_validate(db_order, from_attributes=True)
         except Exception as e:
             orders_logger.error(f"Error processing close order: {str(e)}", exc_info=True)
@@ -1020,7 +1032,7 @@ async def modify_pending_order(
         updated_order = await crud_order.update_order_with_tracking(
             db,
             db_order,
-            update_data,
+            update_fields=update_data,
             user_id=modify_request.user_id,
             user_type=modify_request.user_type
         )
@@ -1043,7 +1055,7 @@ async def modify_pending_order(
             "order_price": str(updated_order.order_price),
             "order_quantity": str(updated_order.order_quantity),
             "contract_value": str(updated_order.contract_value) if updated_order.contract_value else None,
-            "margin": str(updated_order.margin) if updated_order.margin else None,
+            "margin": str(updated_order.margin) if updated_order.margin is not None else None,
             "stop_loss": str(updated_order.stop_loss) if updated_order.stop_loss else None,
             "take_profit": str(updated_order.take_profit) if updated_order.take_profit else None,
             "user_type": modify_request.user_type,
@@ -1053,6 +1065,7 @@ async def modify_pending_order(
         }
         await add_pending_order(redis_client, new_pending_order_data)
 
+        await notify_account_change(redis_client, current_user.id, current_user.user_type)
         return {
             "order_id": updated_order.order_id,
             "order_price": updated_order.order_price,

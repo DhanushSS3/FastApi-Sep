@@ -67,7 +67,7 @@ class DemoUserResponse(DemoUserInDBBase):
 
 # Schema for Demo User Login
 class DemoUserLogin(BaseModel):
-    username: str # Can be email or phone_number
+    email: str # Email address for login
     password: str
 
 # Schema for sending OTP for Demo User signup/verification

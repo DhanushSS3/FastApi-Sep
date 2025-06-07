@@ -26,6 +26,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # Configure basic logging early
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logging.getLogger('app.services.portfolio_calculator').setLevel(logging.DEBUG)
+logging.getLogger('app.services.portfolio_background_worker').setLevel(logging.DEBUG)
 logging.getLogger('app.services.swap_service').setLevel(logging.DEBUG)
 
 # Configure file logging for specific modules to logs/orders.log
@@ -68,8 +69,8 @@ from app.api.v1.api import api_router
 
 # Import background tasks
 from app.firebase_stream import process_firebase_events
-# REMOVE: from app.api.v1.endpoints.market_data_ws import redis_market_data_broadcaster
 from app.api.v1.endpoints.market_data_ws import redis_publisher_task # Keep publisher
+from app.services.portfolio_background_worker import start_portfolio_worker, stop_portfolio_worker
 
 # Import Redis dependency and global instance
 from app.dependencies.redis_client import get_redis_client, global_redis_client_instance
@@ -204,24 +205,26 @@ async def startup_event():
         logger.warning("Scheduler not started: Redis client unavailable.")
 
     if global_redis_client_instance and firebase_app_instance:
+        # Start Firebase stream processing task
         firebase_task = asyncio.create_task(process_firebase_events(firebase_db, path=settings.FIREBASE_DATA_PATH))
         firebase_task.set_name("firebase_listener")
         background_tasks.add(firebase_task)
         firebase_task.add_done_callback(background_tasks.discard)
         logger.info("Firebase stream processing task scheduled.")
 
+        # Start Redis publisher task
         publisher_task = asyncio.create_task(redis_publisher_task(global_redis_client_instance))
         publisher_task.set_name("redis_publisher_task")
         background_tasks.add(publisher_task)
         publisher_task.add_done_callback(background_tasks.discard)
         logger.info("Redis publisher task scheduled.")
-
-        # REMOVE broadcaster_task scheduling
-        # broadcaster_task = asyncio.create_task(redis_market_data_broadcaster(global_redis_client_instance))
-        # broadcaster_task.set_name("redis_market_data_broadcaster")
-        # background_tasks.add(broadcaster_task)
-        # broadcaster_task.add_done_callback(background_tasks.discard)
-        # logger.info("Redis market data broadcaster task scheduled.")
+        
+        # Start portfolio background worker
+        try:
+            await start_portfolio_worker(global_redis_client_instance)
+            logger.info("Portfolio background worker started successfully.")
+        except Exception as e:
+            logger.error(f"Failed to start portfolio background worker: {e}", exc_info=True)
     else:
         missing_services = []
         if not global_redis_client_instance:
@@ -246,38 +249,107 @@ async def shutdown_event():
     global scheduler, global_redis_client_instance
     logger.info("Application shutdown event triggered.")
 
+    # Stop portfolio background worker
+    try:
+        await stop_portfolio_worker()
+        logger.info("Portfolio background worker stopped.")
+    except Exception as e:
+        logger.error(f"Error stopping portfolio background worker: {e}", exc_info=True)
+
     if scheduler and scheduler.running:
         try:
-            scheduler.shutdown(wait=True)
-            logger.info("APScheduler shut down gracefully.")
+            scheduler.shutdown()
+            logger.info("APScheduler shutdown complete.")
         except Exception as e:
-            logger.error(f"Error shutting down APScheduler: {e}", exc_info=True)
-
-    logger.info(f"Cancelling {len(background_tasks)} other background tasks...")
-    for task in list(background_tasks):
-        if not task.done():
-            task.cancel()
-            try:
-                await task
-            except asyncio.CancelledError:
-                logger.info(f"Background task '{task.get_name()}' cancelled successfully.")
-            except Exception as e:
-                logger.error(f"Error during cancellation of task '{task.get_name()}': {e}", exc_info=True)
-
-    if global_redis_client_instance:
-        await close_redis_connection(global_redis_client_instance)
-        global_redis_client_instance = None
-        logger.info("Redis client connection closed.")
+            logger.error(f"Error shutting down scheduler: {e}", exc_info=True)
     else:
-        logger.warning("Redis client was not initialized or already closed.")
+        logger.info("APScheduler not running, no shutdown needed.")
 
+    # Cancel all background tasks
+    for task in background_tasks:
+        if not task.done():
+            logger.info(f"Cancelling background task: {task.get_name()}")
+            task.cancel()
+
+    # Close Redis connection
+    if global_redis_client_instance:
+        try:
+            await close_redis_connection(global_redis_client_instance)
+            logger.info("Redis connection closed.")
+        except Exception as e:
+            logger.error(f"Error closing Redis connection: {e}", exc_info=True)
+
+    # Clean up Firebase resources
     from app.firebase_stream import cleanup_firebase
-    cleanup_firebase()
+    try:
+        cleanup_firebase()
+        logger.info("Firebase resources cleaned up.")
+    except Exception as e:
+        logger.error(f"Error cleaning up Firebase resources: {e}", exc_info=True)
 
-    logger.info("Application shutdown event finished.")
+    logger.info("Application shutdown complete.")
 
+# Include API router
 app.include_router(api_router, prefix=settings.API_V1_STR)
 
+# Mount static files (if needed)
+# app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Root endpoint
 @app.get("/")
 async def read_root():
-    return {"message": "Welcome to the Trading App Backend!"}
+    return {"message": "Welcome to the Trading Platform API"}
+
+# Add an admin endpoint to rebuild the Redis cache
+@app.post("/api/v1/admin/rebuild-cache")
+async def rebuild_cache(db: AsyncSession = Depends(get_db)):
+    """
+    Admin endpoint to rebuild the Redis cache from the database.
+    This is useful after a Redis flush or server restart.
+    """
+    from app.services.portfolio_background_worker import initialize_user_cache
+    from app.crud import user as crud_user
+    
+    try:
+        # Get all users from the database
+        live_users = await crud_user.get_all_users(db)
+        demo_users = await crud_user.get_all_demo_users(db)
+        
+        # Initialize cache for each user
+        initialized_count = 0
+        failed_count = 0
+        
+        for user in live_users:
+            success = await initialize_user_cache(
+                user_id=user.id,
+                user_type="live",
+                redis_client=global_redis_client_instance,
+                db_session=db
+            )
+            if success:
+                initialized_count += 1
+            else:
+                failed_count += 1
+                
+        for user in demo_users:
+            success = await initialize_user_cache(
+                user_id=user.id,
+                user_type="demo",
+                redis_client=global_redis_client_instance,
+                db_session=db
+            )
+            if success:
+                initialized_count += 1
+            else:
+                failed_count += 1
+                
+        return {
+            "status": "success",
+            "message": f"Cache rebuild complete. Initialized {initialized_count} users, failed {failed_count} users."
+        }
+    except Exception as e:
+        logger.error(f"Error rebuilding cache: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error rebuilding cache: {str(e)}"
+        )

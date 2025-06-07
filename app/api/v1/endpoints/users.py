@@ -136,11 +136,14 @@ async def register_user_with_proofs(
     is_self_trading: int = Form(...),
     # Optional fields
     fund_manager: str = Form(None),
-    user_type: str = Form("live"),
+    user_type: str = Form(None),  # Keep accepting user_type but we'll override it
     isActive: int = Form(None),
     db: AsyncSession = Depends(get_db)
 ):
-    existing_user = await crud_user.get_user_by_email_phone_type(db, email=email, phone_number=phone_number, user_type=user_type)
+    # Always set user_type to "live" regardless of what's provided from frontend
+    fixed_user_type = "live"
+    
+    existing_user = await crud_user.get_user_by_email_phone_type(db, email=email, phone_number=phone_number, user_type=fixed_user_type)
     if existing_user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -172,7 +175,7 @@ async def register_user_with_proofs(
         "security_answer": security_answer,
         "address_proof": address_proof,
         "id_proof": id_proof,
-        "user_type": user_type if user_type else "live",
+        "user_type": fixed_user_type,  # Always use "live" regardless of input
         "fund_manager": fund_manager,
         "is_self_trading": is_self_trading,
         "wallet_balance": Decimal("0.0"),
@@ -763,12 +766,12 @@ async def register_demo_user(
     city: Optional[str] = Form(None), # Changed to Optional to match schema more closely if None is intended as default
     state: Optional[str] = Form(None), # Changed to Optional
     pincode: Optional[int] = Form(None),
-    # user_type: str = Form("demo", max_length=100), # Removed: user_type is fixed to "demo" for this endpoint
     security_question: Optional[str] = Form(None),
     group_name: Optional[str] = Form(None),
     db: AsyncSession = Depends(get_db)
 ):
-    fixed_user_type = "demo"  # User type is always "demo" for this endpoint
+    # Always set user_type to "demo" regardless of what might be provided from frontend
+    fixed_user_type = "demo"
 
     existing_user = await crud_user.get_user_by_email_phone_type(db, email=email, phone_number=phone_number, user_type=fixed_user_type)
     if existing_user:
@@ -784,7 +787,7 @@ async def register_demo_user(
         "city": city,
         "state": state,
         "pincode": pincode,
-        "user_type": fixed_user_type, # Use fixed "demo" user type
+        "user_type": fixed_user_type, # Always use "demo" regardless of input
         "security_question": security_question,
         "group_name": group_name,
         "wallet_balance": Decimal("100000.0"), # Starting balance for demo
@@ -826,14 +829,14 @@ async def login_demo_user(
     db: AsyncSession = Depends(get_db),
     redis_client: Redis = Depends(get_redis_client)
 ):
-    demo_user = await crud_user.get_demo_user_by_email(db, email=credentials.username)
+    demo_user = await crud_user.get_demo_user_by_email(db, email=credentials.email)
     if not demo_user:
-        demo_user = await crud_user.get_demo_user_by_phone_number(db, phone_number=credentials.username)
+        demo_user = await crud_user.get_demo_user_by_phone_number(db, phone_number=credentials.email)
 
     if not demo_user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid username or password for demo user",
+            detail="Invalid email or password for demo user",
             headers={"WWW-Authenticate": "Bearer"},
         )
 

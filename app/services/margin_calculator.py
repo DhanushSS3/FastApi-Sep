@@ -9,7 +9,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.orm import selectinload
 from redis.asyncio import Redis
-from app.core.cache import get_adjusted_market_price_cache
 
 from app.database.models import User, Group, ExternalSymbolInfo
 from app.core.cache import (
@@ -17,10 +16,12 @@ from app.core.cache import (
     set_user_data_cache,
     get_group_symbol_settings_cache,
     set_group_symbol_settings_cache,
+    get_group_settings_cache,
     DecimalEncoder,
     get_live_adjusted_buy_price_for_pair,
     get_live_adjusted_sell_price_for_pair,
-    get_adjusted_market_price_cache
+    get_adjusted_market_price_cache,
+    get_last_known_price
 )
 from app.firebase_stream import get_latest_market_data
 from app.crud.crud_symbol import get_symbol_type
